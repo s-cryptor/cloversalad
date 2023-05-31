@@ -15,69 +15,69 @@ function updateQueryParam(key, value) {
     var newUrl = url.href;
     window.history.replaceState({ path: newUrl }, '', newUrl);
 }
-  
+
 
 function findMatchingId(originalId, tolerance) {
     const originalFish = _.find(fishes, { id: originalId });
-  
+
     if (!originalFish) {
-      return []; // Aucune correspondance trouvée
+        return []; // Aucune correspondance trouvée
     }
-  
+
     const originalPositions = originalFish.positions;
-  
+
     const matchingFish = _.filter(fishes, (f) => {
-      if (f.id === originalId) {
-        return false; // Ignorer l'ID d'origine
-      }
-  
-      const isMatchingPosition = _.some(f.positions, (pos) => {
-        return _.some(originalPositions, (originalPos, index) => {
-          const isMatching = (
-            pos.x > (originalPos.x - tolerance) &&
-            pos.x < (originalPos.x + tolerance) &&
-            pos.y > (originalPos.y - tolerance) &&
-            pos.y < (originalPos.y + tolerance)
-          );
-  
-          if (isMatching) {
-            f.originalPosition = index; // Ajouter originalPosition à l'objet correspondant
-          }
-  
-          return isMatching;
+        if (f.id === originalId) {
+            return false; // Ignorer l'ID d'origine
+        }
+
+        const isMatchingPosition = _.some(f.positions, (pos) => {
+            return _.some(originalPositions, (originalPos, index) => {
+                const isMatching = (
+                    pos.x > (originalPos.x - tolerance) &&
+                    pos.x < (originalPos.x + tolerance) &&
+                    pos.y > (originalPos.y - tolerance) &&
+                    pos.y < (originalPos.y + tolerance)
+                );
+
+                if (isMatching) {
+                    f.originalPosition = index; // Ajouter originalPosition à l'objet correspondant
+                }
+
+                return isMatching;
+            });
         });
-      });
-  
-      return isMatchingPosition && f.map === originalFish.map;
+
+        return isMatchingPosition && f.map === originalFish.map;
     });
-  
+
     return _.map(matchingFish, (fish) => {
-      const matchingPositions = _.filter(fish.positions, (pos) => {
-        return (
-          pos.x > (originalPositions[0].x - tolerance) &&
-          pos.x < (originalPositions[0].x + tolerance) &&
-          pos.y > (originalPositions[0].y - tolerance) &&
-          pos.y < (originalPositions[0].y + tolerance)
-        );
-      });
-  
-      const neighborPositions = _.map(matchingPositions, (pos) => {
+        const matchingPositions = _.filter(fish.positions, (pos) => {
+            return (
+                pos.x > (originalPositions[0].x - tolerance) &&
+                pos.x < (originalPositions[0].x + tolerance) &&
+                pos.y > (originalPositions[0].y - tolerance) &&
+                pos.y < (originalPositions[0].y + tolerance)
+            );
+        });
+
+        const neighborPositions = _.map(matchingPositions, (pos) => {
+            return {
+                x: pos.x,
+                y: pos.y
+            };
+        });
+
         return {
-          x: pos.x,
-          y: pos.y
+            id: fish.id,
+            neighborPositions: neighborPositions,
+            name: fish.name,
+            originalPosition: fish.originalPosition // Ajouter originalPosition au résultat
         };
-      });
-  
-      return {
-        id: fish.id,
-        neighborPositions: neighborPositions,
-        name: fish.name,
-        originalPosition: fish.originalPosition // Ajouter originalPosition au résultat
-      };
     });
-  }
-  
-  
+}
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -140,68 +140,68 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(".csidebar").classList.toggle("visible");
         document.querySelector(".menu-toggle").classList.toggle("toggle-is-visible");
     }
-    document.querySelector(".menu-toggle").addEventListener("click", () => {   
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
         toggleSideMenu();
     })
 
     /**SWIPE */
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
-    
+
     var xDown = null;
     var yDown = null;
-    
+
     function handleTouchStart(evt) {
-      const firstTouch = evt.touches[0];
-      xDown = firstTouch.clientX;
-      yDown = firstTouch.clientY;
+        const firstTouch = evt.touches[0];
+        xDown = firstTouch.clientX;
+        yDown = firstTouch.clientY;
     };
-    
+
     function handleTouchMove(evt) {
-      if (!xDown || !yDown) {
-        return;
-      }
-      
-      var xUp = evt.touches[0].clientX;
-      var yUp = evt.touches[0].clientY;
-    
-      var xDiff = xDown - xUp;
-      var yDiff = yDown - yUp;
-    
-      if (Math.abs(xDiff) > Math.abs(yDiff)) {
-        if (xDiff > 0) {
-          // Swipe to the left
-          if (!isTargetElementRange(evt.target)) {
-            triggerSwipeLeftEvent();
-          }
-        } else {
-          // Swipe to the right
-          if (!isTargetElementRange(evt.target)) {
-            triggerSwipeRightEvent();
-          }
+        if (!xDown || !yDown) {
+            return;
         }
-      }
-      
-      // Reset values
-      xDown = null;
-      yDown = null;
+
+        var xUp = evt.touches[0].clientX;
+        var yUp = evt.touches[0].clientY;
+
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+            if (xDiff > 0) {
+                // Swipe to the left
+                if (!isTargetElementRange(evt.target)) {
+                    triggerSwipeLeftEvent();
+                }
+            } else {
+                // Swipe to the right
+                if (!isTargetElementRange(evt.target)) {
+                    triggerSwipeRightEvent();
+                }
+            }
+        }
+
+        // Reset values
+        xDown = null;
+        yDown = null;
     };
-    
+
     function isTargetElementRange(targetElement) {
-      return targetElement.id === 'range';
+        return targetElement.id === 'range';
     }
-    
+
     function triggerSwipeLeftEvent() {
-      document.querySelector(".csidebar").classList.remove("visible")
+        document.querySelector(".csidebar").classList.remove("visible")
     }
-    
+
     function triggerSwipeRightEvent() {
         document.querySelector(".csidebar").classList.add("visible")
     }
-    
-    
 
-    
+
+
+
 
     /*
     document.addEventListener('touchstart', handleTouchStart, false);
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const fish = _.find(fishes, { id: id });
         currentFish = fish;
-        
+
         currentMinPoints = (currentFish.type == "common" ? 300 : currentFish.type == "rare" ? 400 : currentFish.type == "epic" ? 500 : 5000)
 
         updateRange();
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("percent").innerHTML = Number(percent).toFixed(2);
 
         Array.from(document.querySelectorAll(".stars-container .svg-container")).forEach((container, index) => {
-            container.setAttribute("data-current-svg", percent > (index)*20 )
+            container.setAttribute("data-current-svg", percent > (index) * 20)
         })
 
 
@@ -413,6 +413,32 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.closest(".list-container").classList.toggle("hidden-list");
         }
     })
+
+
+    const items = Array.from(document.querySelectorAll(".item"));
+
+
+    function checkScreenWidth() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var isLessThan768 = screenWidth < 768;
+        if (isLessThan768) {
+            document.querySelector(".csidebar").classList.remove("visible");
+
+            items.forEach(item => {
+                item.addEventListener("click", () => {
+                    document.querySelector(".csidebar").classList.remove("visible");
+                })
+            })
+        }
+    }
+
+    window.addEventListener('load', function () {
+        checkScreenWidth();
+    });
+
+    window.addEventListener('resize', function () {
+        checkScreenWidth();
+    });
 
 
 
