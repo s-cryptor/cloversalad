@@ -75,8 +75,9 @@ Technicaly speaking, in the website, each fish is represented by a JavaScript ob
     positionNote: "Is basically everywhere..." // -> free text description
 }
 
-The `positions` values are coordinates to indicate a 2D position on the related map. The horizontal (x) and vertical (y) axes range from 0% to 100%.
 ```
+
+The `positions` values are coordinates to indicate a 2D position on the related map. The horizontal (x) and vertical (y) axes range from 0% to 100%.
 
 
 ![position description](https://i.imgur.com/51P0Wnw.jpeg)
