@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const position = document.createElement("div");
             position.setAttribute("class", "ccross");
             position.setAttribute("data-fishid", id)
-            position.setAttribute("style", `background-image:url("/images/${id}.png");top:${fish.positions[i].x}%;left:${fish.positions[i].y}%`)
+            position.setAttribute("style", `background-image:url("./images/${id}.png");top:${fish.positions[i].x}%;left:${fish.positions[i].y}%`)
 
             if (currentFish.type == "monster") {
 
