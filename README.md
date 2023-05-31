@@ -78,4 +78,4 @@ Each fish is represented by a JavaScript object as the example below.
 
 The `positions` values are coordinates to indicate a 2D position on the related map. The horizontal (x) and vertical (y) axes range from 0% to 100%.
 
-![position description](https://i.imgur.com/51P0Wnw.jpeg)
+![position description]("https://i.imgur.com/51P0Wnw.jpeg")
