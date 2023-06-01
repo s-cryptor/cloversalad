@@ -632,6 +632,12 @@ body.c{
     &:last-of-type{
         margin-bottom:20px;
     }
+    p{
+        word-break: keep-all;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 .cscrollable{
     overflow-y: scroll;

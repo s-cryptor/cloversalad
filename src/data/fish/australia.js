@@ -3,7 +3,7 @@ export const australiaFish = [
         id: "40",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Black Bream - Not accurate"
         },
         attributes: [
             { shadow: [] },
@@ -42,7 +42,7 @@ export const australiaFish = [
         id: "41",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -81,7 +81,7 @@ export const australiaFish = [
         id: "42",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -120,7 +120,7 @@ export const australiaFish = [
         id: "43",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -159,7 +159,7 @@ export const australiaFish = [
         id: "44",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -198,7 +198,7 @@ export const australiaFish = [
         id: "45",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -237,7 +237,7 @@ export const australiaFish = [
         id: "46",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Spanish Mackerel N/A"
         },
         attributes: [
             { shadow: [] },
@@ -276,7 +276,7 @@ export const australiaFish = [
         id: "47",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -315,7 +315,7 @@ export const australiaFish = [
         id: "48",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -354,7 +354,7 @@ export const australiaFish = [
         id: "49",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -393,7 +393,7 @@ export const australiaFish = [
         id: "410",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Tailor - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -432,7 +432,7 @@ export const australiaFish = [
         id: "411",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -471,7 +471,7 @@ export const australiaFish = [
         id: "412",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Rock Flagtail - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -510,7 +510,7 @@ export const australiaFish = [
         id: "413",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Black-Saddler Coral Grouper N/A"
         },
         attributes: [
             { shadow: [] },
@@ -549,7 +549,7 @@ export const australiaFish = [
         id: "414",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Common Stargazer - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -588,7 +588,7 @@ export const australiaFish = [
         id: "415",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Skipjack Tuna - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -628,7 +628,7 @@ export const australiaFish = [
         id: "416",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Fingermark - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -667,7 +667,7 @@ export const australiaFish = [
         id: "417",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Coral Trout - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -706,7 +706,7 @@ export const australiaFish = [
         id: "418",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "John Dory - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -745,7 +745,7 @@ export const australiaFish = [
         id: "419",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Luderick - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -784,7 +784,7 @@ export const australiaFish = [
         id: "420",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Mangrove Jack - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -823,7 +823,7 @@ export const australiaFish = [
         id: "421",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "Golden Trevally - N/A"
         },
         attributes: [
             { shadow: [] },
@@ -862,7 +862,7 @@ export const australiaFish = [
         id: "422",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -901,7 +901,7 @@ export const australiaFish = [
         id: "423",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -940,7 +940,7 @@ export const australiaFish = [
         id: "424",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -979,7 +979,7 @@ export const australiaFish = [
         id: "425",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -1018,7 +1018,7 @@ export const australiaFish = [
         id: "426",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -1057,7 +1057,7 @@ export const australiaFish = [
         id: "427",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -1096,7 +1096,7 @@ export const australiaFish = [
         id: "428",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -1135,7 +1135,7 @@ export const australiaFish = [
         id: "429",
         type: "common",
         name: {
-            eng: "Not yet accurate, please wait"
+            eng: "N/A"
         },
         attributes: [
             { shadow: [] },
