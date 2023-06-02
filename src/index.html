@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3BW0S17RQ3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BW0S17RQ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-3BW0S17RQ3');
-</script>
-  
+    gtag('config', 'G-3BW0S17RQ3');
+  </script>
+
   <meta charset="UTF-8">
   <title>Clover Salad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -96,7 +96,7 @@
         </div>
 
         <div class="ml-auto is-flex is-align-items-center">
-          <div class="mr-3 white-text">want to contribute ? Please visit the Github page →</div>
+          <div id="ctrbtmess" class="mr-3 white-text">want to contribute ? Please visit the Github page →</div>
           <a class="mr-3" href="https://github.com/cloversalad/cloversalad" target="_blank">
             <figure class="image csocial-images">
               <img src="./images/github-mark-white-min.png">
@@ -160,10 +160,22 @@
 
           </div>
 
-          <div class="is-flex-direction-column cbox">
-            <h3 class="box-title">Seasons</h3>
-
-            <div class="resp-flex-col mx-4 is-flex">
+          <div class="is-flex-direction-column cbox relative">
+            <div class="title-container is-flex is-align-items-center">
+              <h3 class="box-title">Seasons</h3>
+              <div class="js-modal-trigger" data-target="modal-js-seasons">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="11.9999" r="9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <rect x="12" y="16" width="0.01" height="0.01" stroke="currentColor" stroke-width="3.75"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M10.5858 7.58572C10.9754 7.1961 11.4858 7.00083 11.9965 6.99994C12.5095 6.99904 13.0228 7.1943 13.4142 7.58572C13.8047 7.97625 14 8.48809 14 8.99994C14 9.51178 13.8047 10.0236 13.4142 10.4141C13.0228 10.8056 12.5095 11.0008 11.9965 10.9999L12 11.9999"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="resp-flex-col mx-4 is-flex is-justify-content-center">
               <div>
                 <div class="is-flex months-container">
                   <div class="">Jan</div>
@@ -184,22 +196,89 @@
                   <span class="out">out of season (oos)</span>
                 </div>
               </div>
-              <div class="white-text ml-resp">
-                When in season, there is no weight limitation. Each fish or creature can be between 1 and 5 stars (0%
-                and 100%).<br>When out of season, the maximum possible weight is 20%, which is the maximum limit of the
-                1 star range
+              <div id="modal-js-seasons" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                  <div class="box">
+                    <h5 class="modal-title mb-4">How seasonality works</h5>
+                    <p class="white-text mb-3">
+                      Each season lasts for 1 month.
+                    </p>
+                    <p class="white-text mb-3">
+                      During the month, each fish can be either 'in season' or 'out of season' (the timing varies for
+                      each species).
+                    </p>
+                    <p class="white-text mb-3">
+                      When a fish is <span class="red-text">Out Of Season</span>, its maximum weight does not exceed 20%
+                      of the species' maximum weight. In other words, this fish is limited to a maximum of 1 star.
+                    </p>
+                    <p class="white-text mb-3">
+                      When a fish is <span class="green-text">in season</span>, its weight is not limited, and the fish
+                      can reach up to 5 stars.
+                    </p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
               </div>
             </div>
           </div>
 
+
+
           <div class="is-flex resp-flex-col cbox">
-
-
-
-
             <div class="cbox w50">
               <div class="pb-5">
-                <h3 class="box-title">Points</h3>
+
+                <div class="title-container is-flex is-align-items-center">
+                  <h3 class="box-title">Points</h3>
+                  <div class="js-modal-trigger" data-target="modal-js-points">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="11.9999" r="9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <rect x="12" y="16" width="0.01" height="0.01" stroke="currentColor" stroke-width="3.75"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M10.5858 7.58572C10.9754 7.1961 11.4858 7.00083 11.9965 6.99994C12.5095 6.99904 13.0228 7.1943 13.4142 7.58572C13.8047 7.97625 14 8.48809 14 8.99994C14 9.51178 13.8047 10.0236 13.4142 10.4141C13.0228 10.8056 12.5095 11.0008 11.9965 10.9999L12 11.9999"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="modal-js-points" class="modal">
+                  <div class="modal-background"></div>
+                  <div class="modal-content">
+                    <div class="box">
+                      <h5 class="modal-title mb-4">How points and weights work</h5>
+                      <p class="white-text mb-3">
+                        Each fish has a minimum and maximum <span class="yellow-text">weight</span> range.
+                      </p>
+                      <p class="white-text mb-3">
+                        When a player catches a fish, its weight will fall within these limits, determining the number
+                        of points earned and the fish's star rating, ranging from 1 to 5 stars.
+                        Considering that the minimum weight corresponds to 0% and the maximum weight to 100%, we divide
+                        this range into 5 equal parts of 20% each.
+                      </p>
+                      <p class="white-text mb-3">
+                        A 1-star fish will have a weight between 0% and 20%.
+                      </p>
+                      <p class="white-text mb-3">A 2-star fish will have a weight between 20% and 40%.</p>
+                      <p class="white-text mb-3">A 3-star fish will have a weight between 40% and 60%.</p>
+                      <p class="white-text mb-3">A 4-star fish will have a weight between 60% and 80%.</p>
+                      <p class="white-text mb-3">A 5-star fish will have a weight between 80% and 100%.</p>
+                      </p>
+                      <p class="white-text mb-3">
+                        The <span class="purple-text">point</span> conversion is as follows:
+                        Common fish have a minimum of 300 points and a maximum of 600 points.
+                        Rare fish range from 400 to 800 points.
+                        Epic fish range from 500 to 1000 points.
+                        Monster fish range from 5000 to 10000 points.
+                        Therefore, an epic fish with a weight of 30% will be worth 700 points and have a quality rating
+                        of 2 stars.
+                      </p>
+                    </div>
+                  </div>
+                  <button class="modal-close is-large" aria-label="close"></button>
+                </div>
 
                 <div class="mb-5 mm-points minmax-container is-justify-content-space-between mx-auto is-flex">
                   <div class="mm-column mm-max-season">
@@ -221,18 +300,21 @@
             </div>
 
             <div class="cbox w50">
-              <div class="toggle-container">
-                <div class="weight-toggle-container is-flex is-align-items-center">
-                  <input class="mx-2" type="checkbox" checked>
-                  <span class="unit-name unit-kgs">kgs</span>
-                  <span class="unit-name unit-lbs">lbs</span>
-                  <div class="toggle-circle"></div>
-                  <div class="toggle-track"></div>
-                </div>
-              </div>
+
 
               <div class="pb-5">
-                <h3 class="box-title">Weight</h3>
+                <div class="title-container is-flex is-align-items-center">
+                  <h3 class="box-title">Weight</h3>
+                  <div class="toggle-container">
+                    <div class="weight-toggle-container is-flex is-align-items-center">
+                      <input class="mx-2" type="checkbox" checked>
+                      <span class="unit-name unit-kgs">kgs</span>
+                      <span class="unit-name unit-lbs">lbs</span>
+                      <div class="toggle-circle"></div>
+                      <div class="toggle-track"></div>
+                    </div>
+                  </div>
+                </div>
 
                 <div class="mm-weight mb-5 minmax-container is-justify-content-space-between mx-auto is-flex">
                   <div class="mm-column mm-max-season">

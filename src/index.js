@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(".season-max-weight .mm-value").innerHTML = (currentFish[unit].min + ((currentFish[unit].max - currentFish[unit].min) * 0.2)).toFixed(2);
 
         document.querySelector(".season-max-points .mm-value").innerHTML = currentMinPoints + currentMinPoints * 0.2;
-        
+
 
         document.querySelector("#no-shadow").setAttribute("data-noshadow", currentFish.attributes[0].shadow[0] === false ? true : false);
 
@@ -331,8 +331,9 @@ document.addEventListener('DOMContentLoaded', () => {
             step.innerHTML = currentMinPoints + (fifth * (index));
         })
 
-        // If monster
-        if (currentFish.type == "monster") {
+
+        // Todo Fix monster rotation
+        if (currentFish.type == "monster" && false) {
 
             function getDateOfDay(offset) {
                 var currentDate = new Date();
@@ -370,18 +371,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 console.log("date=", formatDate(getDateOfDay(start)), "spot index=", index, " ", constraint);
 
-                spot.setAttribute("data-today-spot", "false")    
+                spot.setAttribute("data-today-spot", "false")
 
 
-                if(start == 0){
-                    spot.setAttribute("data-today-spot", "true")    
+                if (start == 0) {
+                    spot.setAttribute("data-today-spot", "true")
                 }
 
 
             })
         }
 
-
+        document.querySelector(".active")?.classList.remove("active");
+        document.querySelector(`[data-id="${id}"]`).classList.add("active");
+        //43474d
 
 
     }
@@ -435,11 +438,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (input.getAttribute("id") == "weight") {
                 if (input.value >= currentFish[unit].min && input.value <= currentFish[unit].max) {
-                    if (/^\d+(\.\d{3})$/.test(input.value)) {
-                        const currentPercent = ((input.value - currentFish[unit].min) / (currentFish[unit].max - currentFish[unit].min)) * 100;
+                    //if (/^\d+(\.\d{3})$/.test(input.value)) {
+                    const currentPercent = ((input.value - currentFish[unit].min) / (currentFish[unit].max - currentFish[unit].min)) * 100;
 
-                        updateRange(currentPercent)
-                    }
+                    updateRange(currentPercent)
+                    //}
                 }
             }
         })
@@ -477,6 +480,26 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', function () {
         checkScreenWidth();
     });
+
+
+
+    var scrollableElement = document.querySelector('.section.cscrollable');
+
+    scrollableElement.addEventListener('scroll', function (event) {
+        var scrollTop = event.target.scrollTop;
+
+        if (scrollTop > 50) {
+            document.querySelector("#header .is-flex:first-of-type").classList.add("sticky")
+            var eventScrollMoreThan50 = new CustomEvent('scrollMoreThan50Event');
+            document.dispatchEvent(eventScrollMoreThan50);
+        } else if (scrollTop >= 0 && scrollTop <= 50) {
+            document.querySelector("#header .is-flex:first-of-type").classList.remove("sticky")
+            var eventScrollBetween0And50 = new CustomEvent('scrollBetween0And50Event');
+            document.dispatchEvent(eventScrollBetween0And50);
+        }
+    });
+
+
 
 
 
