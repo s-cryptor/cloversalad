@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(".season-max-points .mm-value").innerHTML = currentMinPoints + currentMinPoints * 0.2;
         
 
-        document.querySelector("#no-shadow").setAttribute("data-noshadow", currentFish.attributes[0].shadow[0] ? true : false);
+        document.querySelector("#no-shadow").setAttribute("data-noshadow", currentFish.attributes[0].shadow[0] === false ? true : false);
 
         currentFish.attributes.forEach(attribute => {
             const attributeName = Object.keys(attribute)[0];

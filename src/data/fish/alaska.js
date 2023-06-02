@@ -1088,7 +1088,7 @@ export const alaskaFish = [
         id: "321",
         type: "rare",
         name: {
-            eng: "wold eel"
+            eng: "wolf eel"
         },
         attributes: [
             { shadow: [2,3] },

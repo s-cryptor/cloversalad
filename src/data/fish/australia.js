@@ -3,38 +3,41 @@ export const australiaFish = [
         id: "40",
         type: "common",
         name: {
-            eng: "Black Bream - Not accurate"
+            eng: "Black Bream"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [0,1] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 1,
+            max: 4
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 2.2,
+            max: 8.82
         },
         map: "australia",
         positions: [
-
+            {
+                x:5,
+                y:95
+            }
         ],
         positionNote: "Patience"
     },
@@ -42,38 +45,41 @@ export const australiaFish = [
         id: "41",
         type: "common",
         name: {
-            eng: "N/A"
+            eng: "Dusky flathead"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0] }
         ],
         seasons: [
+            true,
+            true,
+            true,
+            true,
             false,
             false,
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 3,
+            max: 15
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 6.61,
+            max: 33.07
         },
         map: "australia",
         positions: [
-
+            {
+                x:15,
+                y:45
+            }
         ],
         positionNote: "Patience"
     },
@@ -237,38 +243,41 @@ export const australiaFish = [
         id: "46",
         type: "common",
         name: {
-            eng: "Spanish Mackerel N/A"
+            eng: "Spanish Mackerel"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [3] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 20,
+            max: 70
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 44.09,
+            max: 154.32
         },
         map: "australia",
         positions: [
-
+            {
+                x:15,
+                y:45
+            }
         ],
         positionNote: "Patience"
     },
@@ -276,40 +285,48 @@ export const australiaFish = [
         id: "47",
         type: "common",
         name: {
-            eng: "N/A"
+            eng: "Albacore"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1,2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0] }
         ],
         seasons: [
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 12,
+            max: 60
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 26.46,
+            max: 132.28
         },
         map: "australia",
         positions: [
+            {
+                x:42,
+                y:94
+            },
+            {
+                x:5,
+                y:95
+            }
 
         ],
-        positionNote: "Patience"
+        positionNote: "Well identified position.<br>Easy to find, easy to farm"
     },
     {
         id: "48",
@@ -354,14 +371,16 @@ export const australiaFish = [
         id: "49",
         type: "common",
         name: {
-            eng: "N/A"
+            eng: "Unicorn Leatherjacket"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [0,1] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0] }
         ],
         seasons: [
+            true,
+            true,
             false,
             false,
             false,
@@ -369,22 +388,24 @@ export const australiaFish = [
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 0.5,
+            max: 2.7
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 1.1,
+            max: 5.95
         },
         map: "australia",
         positions: [
+            {
+                x: 30,
+                y: 65
+            }
 
         ],
         positionNote: "Patience"
@@ -393,20 +414,20 @@ export const australiaFish = [
         id: "410",
         type: "common",
         name: {
-            eng: "Tailor - N/A"
+            eng: "Tailor"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1,2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
+            true,
             false,
             false,
             false,
@@ -415,18 +436,21 @@ export const australiaFish = [
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 3,
+            max: 14.4
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 6.61,
+            max: 31.75
         },
         map: "australia",
         positions: [
-
+            {
+                x:35,
+                y:40
+            }
         ],
-        positionNote: "Patience"
+        positionNote: "Well identified position.<br>Easy to find, easy to farm"
     },
     {
         id: "411",
@@ -510,77 +534,91 @@ export const australiaFish = [
         id: "413",
         type: "common",
         name: {
-            eng: "Black-Saddler Coral Grouper N/A"
+            eng: "Black-Saddler Coral Grouper"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2,3] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 8,
+            max: 24
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 17.64,
+            max: 52.91
         },
         map: "australia",
         positions: [
-
+            {
+                x:30,
+                y:65
+            }
         ],
-        positionNote: "Patience"
+        positionNote: "Well identified position.<br>Easy to find, easy to farm"
     },
     {
         id: "414",
         type: "common",
         name: {
-            eng: "Common Stargazer - N/A"
+            eng: "Common Stargazer"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
             false,
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
+            true,
             false,
             false,
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 2,
+            max: 9
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 4.41,
+            max: 19.84
         },
         map: "australia",
         positions: [
-
+            {
+                x:15,
+                y:45
+            },
+            {
+                x:42,
+                y:94
+            },
+            {
+                x:5,
+                y:95
+            }
         ],
         positionNote: "Patience"
     },
@@ -588,37 +626,45 @@ export const australiaFish = [
         id: "415",
         type: "common",
         name: {
-            eng: "Skipjack Tuna - N/A"
+            eng: "Skipjack Tuna"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 10,
+            max: 40
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 22.05,
+            max: 88.18
         },
         map: "australia",
         positions: [
+            {
+                x:15,
+                y:45
+            },
+            {
+                x:5,
+                y:95
+            }
 
         ],
         positionNote: "Patience"
@@ -667,38 +713,41 @@ export const australiaFish = [
         id: "417",
         type: "common",
         name: {
-            eng: "Coral Trout - N/A"
+            eng: "Coral Trout"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0] }
         ],
         seasons: [
             false,
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 10,
+            max: 23
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 22.05,
+            max: 50.71
         },
         map: "australia",
         positions: [
-
+            {
+                x:30,
+                y:65
+            }
         ],
         positionNote: "Patience"
     },
@@ -706,38 +755,50 @@ export const australiaFish = [
         id: "418",
         type: "common",
         name: {
-            eng: "John Dory - N/A"
+            eng: "John Dory"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [0] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 2,
+            max: 8
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 4.41,
+            max: 17.64
         },
         map: "australia",
         positions: [
-
+            {
+                x:30,
+                y:65
+            },
+            {
+                x:42,
+                y:94
+            },
+            {
+                x:5,
+                y:95
+            }
+            
         ],
         positionNote: "Patience"
     },
@@ -748,9 +809,9 @@ export const australiaFish = [
             eng: "Luderick - N/A"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [0] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
             false,
@@ -758,21 +819,21 @@ export const australiaFish = [
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 1,
+            max: 4
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 2.2,
+            max: 8.82
         },
         map: "australia",
         positions: [
@@ -823,38 +884,45 @@ export const australiaFish = [
         id: "421",
         type: "common",
         name: {
-            eng: "Golden Trevally - N/A"
+            eng: "Golden Trevally"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
             false,
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 4,
+            max: 15
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 8.82,
+            max: 33.07
         },
         map: "australia",
         positions: [
-
+            {
+                x:15,
+                y:45
+            },
+            {
+                x:5,
+                y:95
+            }
         ],
         positionNote: "Patience"
     },
@@ -899,79 +967,85 @@ export const australiaFish = [
     },
     {
         id: "423",
-        type: "common",
+        type: "rare",
         name: {
-            eng: "N/A"
+            eng: "Smooth Oreo Dory"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1] },
+            { rods: [2,3,5] },
+            { moment: [0,1] }
         ],
         seasons: [
+            true,
+            true,
+            true,
+            true,
             false,
             false,
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 2,
+            max: 5
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 4.41,
+            max: 11.02
         },
         map: "australia",
         positions: [
-
+            {
+                x:42,
+                y:94
+            }
         ],
         positionNote: "Patience"
     },
     {
         id: "424",
-        type: "common",
+        type: "rare",
         name: {
-            eng: "N/A"
+            eng: "Swordfish"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [3] },
+            { rods: [2,3,5] },
+            { moment: [0,1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 150,
+            max: 650
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 330.69,
+            max: 1433.01
         },
         map: "australia",
         positions: [
-
+            {
+                x:42,
+                y:94
+            }
         ],
         positionNote: "Patience"
     },
@@ -1016,39 +1090,43 @@ export const australiaFish = [
     },
     {
         id: "426",
-        type: "common",
+        type: "rare",
         name: {
-            eng: "N/A"
+            eng: "Giant Trevally"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [3] },
+            { rods: [2,3,5] },
+            { moment: [0,1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 21,
+            max: 80
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 46.3,
+            max: 176.37
         },
         map: "australia",
         positions: [
+            {
+                x:15,
+                y:45
+            }
 
         ],
         positionNote: "Patience"

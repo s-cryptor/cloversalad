@@ -94,6 +94,9 @@ h4{
     margin:5px;
     padding:0px 4px 15px 5px;
     position:relative;
+    &.w50{
+        border:none;
+    }
 }
 .mm-weight{
     color: var(--yellow);
@@ -1090,5 +1093,11 @@ input[type="number"] {
         #loader-wrapper{
             width:20%;
         }
+    }
+}
+
+@media screen and (max-width: 392px) {
+    #mapName{
+        display:none;
     }
 }
