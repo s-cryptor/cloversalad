@@ -850,7 +850,7 @@ export const crFish = [
         positions: [
             {
                 x: 15,
-                y: 25
+                y: 15
             },
             {
                 x: 45,
@@ -896,7 +896,7 @@ export const crFish = [
         positions: [
             {
                 x: 15,
-                y: 25
+                y: 15
             },
             {
                 x: 45,
@@ -1038,7 +1038,7 @@ export const crFish = [
             eng: "don pedro"
         },
         attributes: [
-            { shadow: [] },
+            { shadow: [9] },
             { rods: [2,3,5] },
             { moment: [1] }
         ],
@@ -1068,7 +1068,7 @@ export const crFish = [
         positions: [
             {
                 x: 85,
-                y: 15
+                y: 45
             },
             {
                 x: 85,
@@ -1076,7 +1076,7 @@ export const crFish = [
             },
             {
                 x: 85,
-                y: 45
+                y: 15
             }
         ],
         positionNote: "MONSTER<br>Spot rotation: it changes every day.<br>Try monster baits to find the bubbles, then cast and wait into the bubbles.<br>If you don't have any monster baits, try cast and reel and wait (and be patient)."

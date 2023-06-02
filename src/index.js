@@ -250,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(findMatchingId(id, 10));
 
 
+
         const fish = _.find(fishes, { id: id });
         currentFish = fish;
 
@@ -271,8 +272,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(".season-max-weight .mm-value").innerHTML = (currentFish[unit].min + ((currentFish[unit].max - currentFish[unit].min) * 0.2)).toFixed(2);
 
         document.querySelector(".season-max-points .mm-value").innerHTML = currentMinPoints + currentMinPoints * 0.2;
+        
 
-        document.querySelector("#no-shadow").setAttribute("data-noshadow", currentFish.shadow?.length == 0 ? true : false);
+        document.querySelector("#no-shadow").setAttribute("data-noshadow", currentFish.attributes[0].shadow[0] ? true : false);
 
         currentFish.attributes.forEach(attribute => {
             const attributeName = Object.keys(attribute)[0];
@@ -296,25 +298,6 @@ document.addEventListener('DOMContentLoaded', () => {
             position.setAttribute("class", "ccross");
             position.setAttribute("data-fishid", id)
             position.setAttribute("style", `background-image:url("./images/${id}.png");top:${fish.positions[i].x}%;left:${fish.positions[i].y}%`)
-
-            if (currentFish.type == "monster") {
-
-                var currentDate = new Date();
-                var startDate = new Date(1899, 11, 30);
-                var daysPassed = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
-                var currentDay = daysPassed + 1;
-                if ((currentDay % 3) === 1) {
-                    var result = 0;
-                } else if ((currentDay % 3) === 2) {
-                    var result = 1;
-                } else {
-                    var result = 2;
-                }
-
-                console.log(i, result);
-
-
-            }
             document.getElementById("positions-container").appendChild(position)
         }
 
@@ -348,7 +331,62 @@ document.addEventListener('DOMContentLoaded', () => {
             step.innerHTML = currentMinPoints + (fifth * (index));
         })
 
+        // If monster
+        if (currentFish.type == "monster") {
+
+            function getDateOfDay(offset) {
+                var currentDate = new Date();
+                currentDate.setDate(currentDate.getDate() + offset);
+                return currentDate;
+            }
+
+            function formatDate(date) {
+                var month = ('0' + (date.getMonth() + 1)).slice(-2);
+                var day = ('0' + date.getDate()).slice(-2);
+
+                return month + '/' + day;
+            }
+
+
+            function getDateConstraint(date, length) {
+                var baseDate = new Date('2023-06-01');
+                var diffInDays = Math.floor((date - baseDate) / (1000 * 60 * 60 * 24));
+                var cycleLength = length;
+                var result = (diffInDays % cycleLength + cycleLength) % cycleLength;
+                return result;
+            }
+
+            Array.from(document.querySelectorAll("#positions-container > div")).forEach((spot, index, array) => {
+
+                const len = array.length;
+                const start = index - 1;
+
+                spot.setAttribute("data-spot-day", formatDate(getDateOfDay(start)));
+
+                var inputDate = getDateOfDay(start)
+                var constraint = getDateConstraint(inputDate, len);
+
+
+
+                console.log("date=", formatDate(getDateOfDay(start)), "spot index=", index, " ", constraint);
+
+                spot.setAttribute("data-today-spot", "false")    
+
+
+                if(start == 0){
+                    spot.setAttribute("data-today-spot", "true")    
+                }
+
+
+            })
+        }
+
+
+
+
     }
+
+
 
     loadFish(currentId)
 

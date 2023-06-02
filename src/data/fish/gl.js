@@ -796,12 +796,8 @@ export const glFish = [
         map: "great-lakes",
         positions: [
             {
-                x: 40,
-                y: 40
-            },
-            {
-                x: 85,
-                y: 20
+                x: 75,
+                y: 55
             }
         ],
         positionNote: "Well identified position.<br>Easy to find, easy to farm"
@@ -1125,7 +1121,7 @@ export const glFish = [
             eng: "bessie"
         },
         attributes: [
-            { shadow: [3,4] },
+            { shadow: [9] },
             { rods: [2,3,5] },
             { moment: [0] }
         ],
@@ -1154,20 +1150,20 @@ export const glFish = [
         map: "great-lakes",
         positions: [
             {
-                x: 90,
-                y: 65
-            },
-            {
-                x: 75,
-                y: 65
+                x: 70,
+                y: 90
             },
             {
                 x: 75,
                 y: 80
             },
             {
-                x: 70,
-                y: 90
+                x: 75,
+                y: 65
+            },
+            {
+                x: 90,
+                y: 65
             }
         ],
         positionNote: "MONSTER<br>Spot rotation: it changes every day.<br>Try monster baits to find the bubbles, then cast and wait into the bubbles.<br>If you don't have any monster baits, try cast and reel and wait (and be patient)."

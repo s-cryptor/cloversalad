@@ -592,7 +592,7 @@ export const paradiseFish = [
             eng: "shredder"
         },
         attributes: [
-            { shadow: [0] },
+            { shadow: [9] },
             { rods: [2,3,5] },
             { moment: [1] }
         ],

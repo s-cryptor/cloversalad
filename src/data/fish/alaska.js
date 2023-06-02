@@ -1321,7 +1321,7 @@ export const alaskaFish = [
             eng: "kraken"
         },
         attributes: [
-            { shadow: [] },
+            { shadow: [9] },
             { rods: [2,3,5] },
             { moment: [0,1] }
         ],
@@ -1350,6 +1350,10 @@ export const alaskaFish = [
         map: "alaska",
         positions: [
             {
+                x: 14,
+                y: 66
+            },
+            {
                 x: 17,
                 y: 74
             },
@@ -1360,10 +1364,6 @@ export const alaskaFish = [
             {
                 x: 29,
                 y: 85
-            },
-            {
-                x: 14,
-                y: 66
             }
         ],
         positionNote: "MONSTER<br>Spot rotation: it changes every day.<br>Try monster baits to find the bubbles, then cast and wait into the bubbles.<br>If you don't have any monster baits, try cast and reel and wait (and be patient)."

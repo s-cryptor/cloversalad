@@ -897,10 +897,39 @@ div.box{
     height:40px;
     transform:translateX(-50%) translateY(-50%);
     z-index:1;
-    //background-image: url(http://localhost:8080/images/01.png);
     background-size: 100%;
     border: 2px solid var(--red);
     border-radius: 50%;
+    &:after{
+        content: attr(data-spot-day);
+        display: block;
+        font-size: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%);
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 0 2px;
+        color: white;
+        background-color: var(--red);
+    }
+    &[data-today-spot="true"]{
+        border: 2px solid var(--green);
+        &:after{
+            background-color:var(--green);
+        }
+    }
+    &[data-today-spot="false"]{
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border:none;
+        &:after{
+            transform: translateX(-50%) translateY(0%);
+            font-size:8px;
+        }
+    }
 }
 
 
