@@ -37,6 +37,14 @@ export const australiaFish = [
             {
                 x:5,
                 y:95
+            },
+            {
+                x:85,
+                y:47
+            },
+            {
+                x:70,
+                y:30
             }
         ],
         positionNote: "Patience"
@@ -79,6 +87,10 @@ export const australiaFish = [
             {
                 x:15,
                 y:45
+            },
+            {
+                x:95,
+                y:30
             }
         ],
         positionNote: "Patience"
@@ -87,40 +99,43 @@ export const australiaFish = [
         id: "42",
         type: "common",
         name: {
-            eng: "N/A"
+            eng: "Red Emperor Snapper"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 12,
+            max: 32
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 26.46,
+            max: 70.55
         },
         map: "australia",
         positions: [
-
+            {
+                x:85,
+                y:47
+            }
         ],
-        positionNote: "Patience"
+        positionNote: "Well identified position.<br>Easy to find, easy to farm"
     },
     {
         id: "43",
@@ -277,6 +292,10 @@ export const australiaFish = [
             {
                 x:15,
                 y:45
+            },
+            {
+                x:50,
+                y:30
             }
         ],
         positionNote: "Patience"
@@ -323,6 +342,10 @@ export const australiaFish = [
             {
                 x:5,
                 y:95
+            },
+            {
+                x:60,
+                y:55
             }
 
         ],
@@ -332,19 +355,19 @@ export const australiaFish = [
         id: "48",
         type: "common",
         name: {
-            eng: "N/A"
+            eng: "Barramundi"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
             false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
             false,
             false,
             false,
@@ -354,16 +377,19 @@ export const australiaFish = [
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 12,
+            max: 60
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 26.46,
+            max: 132.28
         },
         map: "australia",
         positions: [
-
+            {
+                x:50,
+                y:30
+            }
         ],
         positionNote: "Patience"
     },
@@ -448,6 +474,10 @@ export const australiaFish = [
             {
                 x:35,
                 y:40
+            },
+            {
+                x:50,
+                y:30
             }
         ],
         positionNote: "Well identified position.<br>Easy to find, easy to farm"
@@ -537,7 +567,7 @@ export const australiaFish = [
             eng: "Black-Saddler Coral Grouper"
         },
         attributes: [
-            { shadow: [2,3] },
+            { shadow: [3,4] },
             { rods: [0,1,2,3,4,5] },
             { moment: [0,1] }
         ],
@@ -618,6 +648,10 @@ export const australiaFish = [
             {
                 x:5,
                 y:95
+            },
+            {
+                x:70,
+                y:30
             }
         ],
         positionNote: "Patience"
@@ -797,6 +831,10 @@ export const australiaFish = [
             {
                 x:5,
                 y:95
+            },
+            {
+                x:85,
+                y:47
             }
             
         ],
@@ -806,7 +844,7 @@ export const australiaFish = [
         id: "419",
         type: "common",
         name: {
-            eng: "Luderick - N/A"
+            eng: "Luderick"
         },
         attributes: [
             { shadow: [0] },
@@ -837,7 +875,10 @@ export const australiaFish = [
         },
         map: "australia",
         positions: [
-
+            {
+                x:95,
+                y:30
+            }
         ],
         positionNote: "Patience"
     },
@@ -887,7 +928,7 @@ export const australiaFish = [
             eng: "Golden Trevally"
         },
         attributes: [
-            { shadow: [2] },
+            { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
             { moment: [0,1] }
         ],
@@ -922,22 +963,33 @@ export const australiaFish = [
             {
                 x:5,
                 y:95
+            },
+            {
+                x:85,
+                y:47
+            },
+            {
+                x:70,
+                y:30
             }
         ],
         positionNote: "Patience"
     },
     {
         id: "422",
-        type: "common",
+        type: "rare",
         name: {
-            eng: "N/A"
+            eng: "Queensland Grouper"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2] },
+            { rods: [2,3,5] },
+            { moment: [0,1] }
         ],
         seasons: [
+            true,
+            true,
+            true,
             false,
             false,
             false,
@@ -946,22 +998,26 @@ export const australiaFish = [
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 200,
+            max: 600
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 440.92,
+            max: 1322.77
         },
         map: "australia",
         positions: [
-
+            {
+                x:80,
+                y:90
+            },
+            {
+                x:50,
+                y:70
+            }
         ],
         positionNote: "Patience"
     },
@@ -1045,6 +1101,10 @@ export const australiaFish = [
             {
                 x:42,
                 y:94
+            },
+            {
+                x:5,
+                y:95
             }
         ],
         positionNote: "Patience"
