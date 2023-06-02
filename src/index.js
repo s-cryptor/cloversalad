@@ -438,11 +438,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (input.getAttribute("id") == "weight") {
                 if (input.value >= currentFish[unit].min && input.value <= currentFish[unit].max) {
-                    //if (/^\d+(\.\d{3})$/.test(input.value)) {
+                    if (/^\d+(\.\d{3})$/.test(input.value)) {
                     const currentPercent = ((input.value - currentFish[unit].min) / (currentFish[unit].max - currentFish[unit].min)) * 100;
 
                     updateRange(currentPercent)
-                    //}
+                    }
                 }
             }
         })
