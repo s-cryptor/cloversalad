@@ -47,7 +47,7 @@ export const australiaFish = [
                 y:30
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "41",
@@ -93,7 +93,7 @@ export const australiaFish = [
                 y:30
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "42",
@@ -135,89 +135,97 @@ export const australiaFish = [
                 y:47
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: " "
     },
     {
         id: "43",
         type: "common",
         name: {
-            eng: "N/A"
+            eng: "Shortfin Mako Shark"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1,2] },
+            { rods: [1,2,3,5] },
+            { moment: [1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 114,
+            max: 505
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 251.33,
+            max: 1113.33
         },
         map: "australia",
         positions: [
+            {
+                x:5,
+                y:95
+            }
 
         ],
-        positionNote: "Patience"
+        positionNote: " "
     },
     {
         id: "44",
         type: "common",
         name: {
-            eng: "N/A"
+            eng: "Carpet Shark"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 15,
+            max: 70
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 33.07,
+            max: 154.32
         },
         map: "australia",
         positions: [
-
+            {
+                x: 30,
+                y: 60
+            }
         ],
-        positionNote: "Patience"
+        positionNote: "Well identified position."
     },
     {
         id: "45",
         type: "common",
+        inprogress: true,
         name: {
             eng: "N/A"
         },
@@ -252,7 +260,7 @@ export const australiaFish = [
         positions: [
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "46",
@@ -298,7 +306,7 @@ export const australiaFish = [
                 y:30
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "47",
@@ -349,7 +357,7 @@ export const australiaFish = [
             }
 
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: " "
     },
     {
         id: "48",
@@ -396,7 +404,7 @@ export const australiaFish = [
             
             }
         ],
-        positionNote: "Patience"
+        positionNote: " .<br>(Steve required 90kgs of it for the main quest)"
     },
     {
         id: "49",
@@ -439,7 +447,7 @@ export const australiaFish = [
             }
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "410",
@@ -485,11 +493,12 @@ export const australiaFish = [
                 y:30
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: " "
     },
     {
         id: "411",
         type: "common",
+        inprogress: true,
         name: {
             eng: "N/A"
         },
@@ -524,17 +533,17 @@ export const australiaFish = [
         positions: [
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "412",
         type: "common",
         name: {
-            eng: "Rock Flagtail - N/A"
+            eng: "Rock Flagtail"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
+            { shadow: [0,1] },
+            { rods: [0,1,2,3,4,5] },
             { moment: [] }
         ],
         seasons: [
@@ -561,9 +570,13 @@ export const australiaFish = [
         },
         map: "australia",
         positions: [
+            {
+                x:5,
+                y:95
+            }
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "413",
@@ -605,7 +618,7 @@ export const australiaFish = [
                 y:65
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: " "
     },
     {
         id: "414",
@@ -659,7 +672,7 @@ export const australiaFish = [
                 y:30
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "415",
@@ -706,47 +719,50 @@ export const australiaFish = [
             }
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
 
     {
         id: "416",
         type: "common",
         name: {
-            eng: "Fingermark - N/A"
+            eng: "Fingermark"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1,2] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 2,
+            max: 10
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 4.41,
+            max: 22.05
         },
         map: "australia",
         positions: [
-
+            {
+                x:30,
+                y:60
+            }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "417",
@@ -788,7 +804,7 @@ export const australiaFish = [
                 y:65
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "418",
@@ -797,7 +813,7 @@ export const australiaFish = [
             eng: "John Dory"
         },
         attributes: [
-            { shadow: [0] },
+            { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
             { moment: [0,1] }
         ],
@@ -840,10 +856,14 @@ export const australiaFish = [
             {
                 x:85,
                 y:47
+            },
+            {
+                x:5,
+                y:95
             }
             
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "419",
@@ -885,46 +905,58 @@ export const australiaFish = [
                 y:30
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "420",
         type: "common",
         name: {
-            eng: "Mangrove Jack - N/A"
+            eng: "Mangrove Jack"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [0,1] },
+            { rods: [0,1,2,3,4,5] },
+            { moment: [1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 3,
+            max: 8.70
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 6.61,
+            max: 19.18
         },
         map: "australia",
         positions: [
+            {
+                x:5,
+                y:95
+            },
+            {
+                x: 30,
+                y: 60
+            },
+            {
+                x: 50,
+                y: 30
+            }
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "421",
@@ -976,9 +1008,13 @@ export const australiaFish = [
             {
                 x:70,
                 y:30
+            },
+            {
+                x: 30,
+                y: 60
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "422",
@@ -1024,7 +1060,7 @@ export const australiaFish = [
                 y:70
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "423",
@@ -1064,9 +1100,13 @@ export const australiaFish = [
             {
                 x:42,
                 y:94
+            },
+            {
+                x:5,
+                y:95
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "424",
@@ -1112,11 +1152,12 @@ export const australiaFish = [
                 y:95
             }
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "425",
         type: "common",
+        inprogress: true,
         name: {
             eng: "N/A"
         },
@@ -1151,7 +1192,7 @@ export const australiaFish = [
         positions: [
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "426",
@@ -1194,11 +1235,12 @@ export const australiaFish = [
             }
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "427",
         type: "common",
+        inprogress: true,
         name: {
             eng: "N/A"
         },
@@ -1233,11 +1275,12 @@ export const australiaFish = [
         positions: [
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "428",
         type: "common",
+        inprogress: true,
         name: {
             eng: "N/A"
         },
@@ -1272,11 +1315,12 @@ export const australiaFish = [
         positions: [
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     },
     {
         id: "429",
         type: "common",
+        inprogress: true,
         name: {
             eng: "N/A"
         },
@@ -1311,6 +1355,6 @@ export const australiaFish = [
         positions: [
 
         ],
-        positionNote: "Patience"
+        positionNote: ""
     }
 ]

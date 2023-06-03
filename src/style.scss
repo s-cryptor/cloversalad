@@ -101,9 +101,6 @@ h4{
 #header{
     padding-top:15px;
 }
-.w50{
-    width:50%;
-}
 .cbox{
     border:1px solid currentColor;
     margin:5px;
@@ -511,13 +508,24 @@ h4{
             width:100%;
             height:100%;
             .step{
-                font-size:13px;
+                font-size:10px;
                 position:absolute;
                 transform:translateX(-50%);
                 background-color:var(--darkMed);
                 &.step-points{
                     top:0;
                     color:var(--purple);
+                    &:after{
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 63px;
+                        background: linear-gradient(180deg, var(--purple) 0%, var(--purple) 50%, var(--yellow) 50%, var(--yellow) 100%);
+                        opacity:0.8;
+                        left: 50%;
+                        position: absolute;
+                        transform: translateX(-50%);
+                    }
                 }
                 &.step-weight{
                     bottom:0;
@@ -551,9 +559,6 @@ h4{
     .scale{
         min-width:90%;
         margin: 0 auto;
-    }
-    .w50{
-        width:100%;
     }
 }
 .scale{
@@ -698,15 +703,33 @@ body.c{
 .htgo-container{
     width:100%;
 }
+
+
+[data-unit]{
+    position:relative;
+    &:after{
+        content: attr(data-unit);
+        display: block;
+        position: absolute;
+        color: white;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(80%);
+        font-size: 14px;
+        color: var(--yellow);
+    }
+}
+
 .weight-toggle-container{
     position: relative;
-    width: 70px;
-    font-size: 0.6rem;
+    width: 90px;
+    font-size: 0.8rem;
+    font-weight: bold;
     input{
         order: 2;
         opacity: 0;
         display: block;
-        width: 22px;
+        width: 100%;
         cursor: pointer;
         &:checked{
             & ~ .toggle-circle{
@@ -714,31 +737,22 @@ body.c{
             }
         }
     }
-    input:checked ~ .unit-kgs{
-        color: var(--yellow);
-        opacity:1;
-    }
-    input:checked ~ .unit-lbs{
-        color: unset;
-        opacity:0.7;
-    }
     .unit-kgs{
         order: 1;
-        opacity:0.7;
     }
     .unit-lbs{
         order: 3;
-        color: var(--yellow);
     }
     .unit-name{
         transition-duration: 0.3s;
+        color: var(--darkText);
     }
     .toggle-circle{
         pointer-events: none;
-        width: 11px;
-        height: 11px;
+        width: 13px;
+        height: 13px;
         border-radius: 50%;
-        background-color: var(--yellow);
+        background-color: var(--darkText);
         position:absolute;
         top:50%;
         left: 50%;
@@ -747,12 +761,12 @@ body.c{
     }
     .toggle-track{
         pointer-events: none;
-        width:27px;
-        height: 14px;
-        border-radius: 10px;
-        border: 1px solid var(--yellow);
-        position:absolute;
-        top:50%;
+        width: 37px;
+        height: 23px;
+        border-radius: 15px;
+        border: 3px solid var(--darkText);
+        position: absolute;
+        top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }

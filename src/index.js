@@ -8,6 +8,14 @@ import { createList } from './module';
 import { fishes } from './data/fish//allfish.js';
 
 
+
+function trackDataIdClicks(dataIdValue) {
+    console.log("data", dataIdValue);
+    
+    ga('send', 'event', 'Clic', 'DataId', dataIdValue);
+}
+
+
 function updateQueryParam(key, value) {
     var url = new URL(window.location.href);
     url.searchParams.set(key, value);
@@ -87,6 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let unit = "kgs";
     document.querySelector(".weight-toggle-container input").addEventListener("change", (e) => {
         unit = e.target.checked ? "kgs" : "lbs";
+        Array.from(document.querySelectorAll("[data-unit")).forEach(element => {
+            element.setAttribute("data-unit", unit);
+        })
         loadFish(currentId);
     })
 
@@ -453,6 +464,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains("list-title")) {
             e.target.closest(".list-container").classList.toggle("hidden-list");
         }
+        if(e.target.classList.contains("fishp")){
+            const clickedId = e.target.closest(".item").getAttribute("data-id");
+            trackDataIdClicks(clickedId)
+        }
     })
 
 
@@ -498,13 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.dispatchEvent(eventScrollBetween0And50);
         }
     });
-
-
-
-
-
-
-
+  
 });
 
 
@@ -521,3 +530,5 @@ onPageLoad(function () {
 
     }, 500)
 });
+
+

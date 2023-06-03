@@ -49,9 +49,14 @@ export function createList(fish) {
         listContainer.appendChild(innerList);
 
     }
+
+
     const item = document.createElement("div");
     item.setAttribute("class", `item is-flex is-align-items-center py-1 px-4 map-${fish.map} ${fish.type}`);
     item.setAttribute("data-id", fish.id)
+    if(fish.inprogress){
+        item.setAttribute("style", "pointer-events:none;background-color: #191919;color: #853535;");
+    }
     const figure = document.createElement("figure");
     figure.setAttribute("class", "image is-24x24 mr-3");
     item.appendChild(figure);
@@ -60,7 +65,7 @@ export function createList(fish) {
     img.setAttribute("class", "is-rounded");
     figure.appendChild(img);
     const p = document.createElement("p");
-    p.setAttribute("class", "is-size-6");
+    p.setAttribute("class", "is-size-6 fishp");
     p.innerHTML = fish.name.eng;
     item.appendChild(p)
 
