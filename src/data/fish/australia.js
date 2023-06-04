@@ -5,6 +5,7 @@ export const australiaFish = [
         name: {
             eng: "Black Bream"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -55,6 +56,7 @@ export const australiaFish = [
         name: {
             eng: "Dusky flathead"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -101,6 +103,7 @@ export const australiaFish = [
         name: {
             eng: "Red Emperor Snapper"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -143,6 +146,7 @@ export const australiaFish = [
         name: {
             eng: "Shortfin Mako Shark"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [1,2] },
             { rods: [1,2,3,5] },
@@ -268,6 +272,7 @@ export const australiaFish = [
         name: {
             eng: "Spanish Mackerel"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [3] },
             { rods: [0,1,2,3,4,5] },
@@ -314,6 +319,7 @@ export const australiaFish = [
         name: {
             eng: "Albacore"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -365,6 +371,7 @@ export const australiaFish = [
         name: {
             eng: "Barramundi"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -412,6 +419,7 @@ export const australiaFish = [
         name: {
             eng: "Unicorn Leatherjacket"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -455,6 +463,7 @@ export const australiaFish = [
         name: {
             eng: "Tailor"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -498,40 +507,43 @@ export const australiaFish = [
     {
         id: "411",
         type: "common",
-        inprogress: true,
         name: {
-            eng: "N/A"
+            eng: "Leafy Seadragon"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { rods: [0,1,2,3,4,5] },
+            { moment: [0,1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 0.05,
+            max: 0.1
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 0.11,
+            max: 0.22
         },
         map: "australia",
         positions: [
-
+            {
+                x:50,
+                y:30
+            }
         ],
         positionNote: ""
     },
@@ -541,6 +553,7 @@ export const australiaFish = [
         name: {
             eng: "Rock Flagtail"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -584,6 +597,7 @@ export const australiaFish = [
         name: {
             eng: "Black-Saddler Coral Grouper"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [3,4] },
             { rods: [0,1,2,3,4,5] },
@@ -626,6 +640,7 @@ export const australiaFish = [
         name: {
             eng: "Common Stargazer"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -680,6 +695,7 @@ export const australiaFish = [
         name: {
             eng: "Skipjack Tuna"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -728,6 +744,7 @@ export const australiaFish = [
         name: {
             eng: "Fingermark"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -770,6 +787,7 @@ export const australiaFish = [
         name: {
             eng: "Coral Trout"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -812,6 +830,7 @@ export const australiaFish = [
         name: {
             eng: "John Dory"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -871,6 +890,7 @@ export const australiaFish = [
         name: {
             eng: "Luderick"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0] },
             { rods: [0,1,2,3,4,5] },
@@ -913,6 +933,7 @@ export const australiaFish = [
         name: {
             eng: "Mangrove Jack"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -964,6 +985,7 @@ export const australiaFish = [
         name: {
             eng: "Golden Trevally"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -1114,6 +1136,7 @@ export const australiaFish = [
         name: {
             eng: "Swordfish"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },

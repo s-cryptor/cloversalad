@@ -10,6 +10,7 @@ export const paradiseFish = [
             { rods: [0,1,2,3,4,5] },
             { moment: [0, 1] }
         ],
+        difficulty: 0,
         seasons: [
             true,
             true,
@@ -39,7 +40,7 @@ export const paradiseFish = [
                 y: 50
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "02",
@@ -47,6 +48,7 @@ export const paradiseFish = [
         name: {
             eng: "spot-fin porcupinefish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0] },
             { rods: [0,1,2,3,4,5] },
@@ -81,7 +83,7 @@ export const paradiseFish = [
                 y: 75
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "03",
@@ -89,6 +91,7 @@ export const paradiseFish = [
         name: {
             eng: "snubnose pompano"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -135,7 +138,7 @@ export const paradiseFish = [
                 y: 75
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "04",
@@ -144,6 +147,7 @@ export const paradiseFish = [
         name: {
             eng: "largetooth flounder"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -180,7 +184,7 @@ export const paradiseFish = [
         ],
         shadow: [1,2],
         rods: [0, 1, 2, 3, 4, 5],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "05",
@@ -189,6 +193,7 @@ export const paradiseFish = [
         name: {
             eng: "blue trevally"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -227,7 +232,7 @@ export const paradiseFish = [
                 y: 50
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "06",
@@ -236,6 +241,7 @@ export const paradiseFish = [
         name: {
             eng: "bonefish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -284,7 +290,7 @@ export const paradiseFish = [
         ],
         shadow: [2],
         rods: [0, 1, 2, 3, 4, 5],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "07",
@@ -293,6 +299,7 @@ export const paradiseFish = [
         name: {
             eng: "longtail tuna"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -327,7 +334,7 @@ export const paradiseFish = [
                 y: 25
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "08",
@@ -336,6 +343,7 @@ export const paradiseFish = [
         name: {
             eng: "clownfish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [] },
             { rods: [0,1,2,3,4,5] },
@@ -370,7 +378,7 @@ export const paradiseFish = [
                 y: 70
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "09",
@@ -379,6 +387,7 @@ export const paradiseFish = [
         name: {
             eng: "green humphead parrotfish"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3,4] },
             { rods: [1,2,3,5] },
@@ -435,7 +444,7 @@ export const paradiseFish = [
                 y: 10
             }
         ],
-        positionNote: "No specific spot, can be found anywhere.<br>The best is to start at coral reefs to see more potential shadows (clownfish don't have a shadow)"
+        positionNote: ""
     },
     {
         id: "010",
@@ -443,6 +452,7 @@ export const paradiseFish = [
         name: {
             eng: "white-tuna"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3,4] },
             { rods: [1,2,3,5] },
@@ -479,7 +489,7 @@ export const paradiseFish = [
                 y: 25
             }
         ],
-        positionNote: "Easy to find, easy to farm, just go to the indicated position."
+        positionNote: ""
     },
     {
         id: "011",
@@ -487,6 +497,7 @@ export const paradiseFish = [
         name: {
             eng: "pelagic stingray"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3] },
             { rods: [1,2,3,5] },
@@ -531,7 +542,7 @@ export const paradiseFish = [
         ],
         shadow: [3],
         rods: [2, 3, 5],
-        positionNote: "Easy to find, easy to farm, just go to the indicated positions"
+        positionNote: ""
     },
     {
         id: "012",
@@ -540,6 +551,7 @@ export const paradiseFish = [
         name: {
             eng: "pacific footballfish"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2] },
             { rods: [1,2,3,5] },
@@ -582,7 +594,7 @@ export const paradiseFish = [
                 y:15
             }
         ],
-        positionNote: "Easy to find, easy to farm, just go to the indicated positions."
+        positionNote: ""
     },
     {
         id: "013",
@@ -591,8 +603,9 @@ export const paradiseFish = [
         name: {
             eng: "shredder"
         },
+        difficulty: 2,
         attributes: [
-            { shadow: [9] },
+            { shadow: [] },
             { rods: [2,3,5] },
             { moment: [1] }
         ],

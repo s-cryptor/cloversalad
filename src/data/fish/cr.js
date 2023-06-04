@@ -5,6 +5,7 @@ export const crFish = [
         name: {
             eng: "barracuda"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2,3] },
             { rods: [0,1,2,3,4,5] },
@@ -51,6 +52,7 @@ export const crFish = [
         name: {
             eng: "roosterfish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -97,6 +99,7 @@ export const crFish = [
         name: {
             eng: "dorado"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -143,6 +146,7 @@ export const crFish = [
         name: {
             eng: "pompano"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0] },
             { rods: [0,1,2,3,4,5] },
@@ -189,6 +193,7 @@ export const crFish = [
         name: {
             eng: "wahoo"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [1,2,3,5] },
@@ -235,6 +240,7 @@ export const crFish = [
         name: {
             eng: "tripletail"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -281,6 +287,7 @@ export const crFish = [
         name: {
             eng: "tarpon"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3,4] },
             { rods: [1,2,3,5] },
@@ -327,6 +334,7 @@ export const crFish = [
         name: {
             eng: "yellowfin tuna"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [3] },
             { rods: [0,1,2,3,4,5] },
@@ -377,6 +385,7 @@ export const crFish = [
         name: {
             eng: "sierra mackerel"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -427,6 +436,7 @@ export const crFish = [
         name: {
             eng: "pacific sailfish"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [1,2,3,5] },
@@ -481,6 +491,7 @@ export const crFish = [
         name: {
             eng: "jack crevalle"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -531,6 +542,7 @@ export const crFish = [
         name: {
             eng: "cubera snapper"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2,3] },
             { rods: [0,1,2,3,4,5] },
@@ -581,6 +593,7 @@ export const crFish = [
         name: {
             eng: "broomtail grouper"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [3,4] },
             { rods: [0,1,2,3,4,5] },
@@ -639,6 +652,7 @@ export const crFish = [
         name: {
             eng: "snook"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -689,6 +703,7 @@ export const crFish = [
         name: {
             eng: "blue marlin"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },
@@ -731,6 +746,7 @@ export const crFish = [
         name: {
             eng: "striped marlin"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },
@@ -773,6 +789,7 @@ export const crFish = [
         name: {
             eng: "nurse shark"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },
@@ -819,6 +836,7 @@ export const crFish = [
         name: {
             eng: "black marlin"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },
@@ -865,6 +883,7 @@ export const crFish = [
         name: {
             eng: "bull shark"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },
@@ -911,6 +930,7 @@ export const crFish = [
         name: {
             eng: "hammerhead shark"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },
@@ -953,6 +973,7 @@ export const crFish = [
         name: {
             eng: "whale shark"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [] },
             { rods: [2,3,5] },
@@ -995,6 +1016,7 @@ export const crFish = [
         name: {
             eng: "whitetip shark"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [2,3] },
             { rods: [2,3,5] },
@@ -1029,7 +1051,7 @@ export const crFish = [
                 y: 15
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, a bit more difficult to farm"
+        positionNote: ""
     },
     { 
         id: "223",
@@ -1037,6 +1059,7 @@ export const crFish = [
         name: {
             eng: "don pedro"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [9] },
             { rods: [2,3,5] },

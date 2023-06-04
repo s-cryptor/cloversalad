@@ -70,8 +70,30 @@ h3{
 .title-container{
     margin: 0 0 15px 0;
 }
+
 h4{
     color:var(--yellow);
+}
+
+.common{
+    #fishType{
+        color: var(--darkText);
+    }
+}
+.rare{
+    #fishType{
+        color: var(--yellow);
+    }
+}
+.epic{
+    #fishType{
+        color: var(--purple);
+    }
+}
+.monster{
+    #fishType{
+        color: var(--red);
+    }
 }
 .ml-resp{
     margin-left:30px;
@@ -97,6 +119,81 @@ h4{
     content:attr(data-shadow);
     display:block;
     color:white;
+}
+.minigame{
+    border:1px solid var(--darkMax);
+    border-radius:4px;
+    width:150px;
+    height:8px;
+    padding:2px;
+    position:relative;
+    margin:20px 0;
+    &:before{
+        content:"";
+        display:block;
+        width:10px;
+        height:10px;
+        border-radius:50%;
+        background-color:var(--yellow);
+        position:absolute;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+    }
+    div{
+        background-color:var(--yellow);
+        height:100%;
+        width:60%;
+        transition-duration:0.3s;
+        animation-name: mg;
+        animation-duration:0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        span{
+            display: block;
+            width: 30px;
+            height: 11px;
+            border: 1px solid var(--yellow);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 5px;
+            left: 65%;
+        }
+    }
+}
+.moving-mg{
+    div{
+        span{
+            animation-name: mgmoving;
+            animation-duration:1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+    }
+}
+@keyframes mg {
+    0%{
+        width:80%;
+    }
+    33%{
+        width: 75%;
+    }
+    66%{
+        width: 70%;
+    }
+    100%{
+        width:65%;
+    }
+}
+@keyframes mgmoving {
+    0%{
+        left:40%;
+    }
+    100%{
+        left:65%;
+    }
 }
 #header{
     padding-top:15px;
@@ -725,12 +822,18 @@ body.c{
     width: 90px;
     font-size: 0.8rem;
     font-weight: bold;
+    color:var(--darkText);
+    transition-duration: 0.15s;
+    &:hover{
+        color:var(--text);
+    }
     input{
         order: 2;
         opacity: 0;
         display: block;
         width: 100%;
         cursor: pointer;
+        height:20px;
         &:checked{
             & ~ .toggle-circle{
                 transform: translateX(calc(-50% - 6px)) translateY(-50%);
@@ -745,26 +848,25 @@ body.c{
     }
     .unit-name{
         transition-duration: 0.3s;
-        color: var(--darkText);
+        color: currentColor;
     }
     .toggle-circle{
         pointer-events: none;
         width: 13px;
         height: 13px;
         border-radius: 50%;
-        background-color: var(--darkText);
+        background-color: currentColor;
         position:absolute;
         top:50%;
         left: 50%;
         transform: translateX(calc(-50% + 6px)) translateY(-50%);
-        transition-duration: 0.3s;
     }
     .toggle-track{
         pointer-events: none;
         width: 37px;
         height: 23px;
         border-radius: 15px;
-        border: 3px solid var(--darkText);
+        border: 3px solid currentColor;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -817,7 +919,7 @@ section.hero{
     padding: 10px;
     height: 34px;
     box-sizing: content-box;
-    border-bottom:1px solid var(--green);
+    border-bottom:1px solid var(--text);
 }
 .csidebar-list{
     overflow-y: scroll;
@@ -833,7 +935,7 @@ section.hero{
     height:34px;
     padding: 10px 10px 10px 0;
     box-sizing:content-box;
-    border-bottom:1px solid var(--green);
+    border-bottom:1px solid var(--text);
 }
 .csocial-images{
     width: 25px;
@@ -1120,7 +1222,8 @@ input[type="number"] {
     padding: 0 40px 15px 40px;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(0,0,0,0) var(--green) var(--yellow) var(--green);
+    border-color: var(--text);
+    border-top-color:transparent;
 }
 
 

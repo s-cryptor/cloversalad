@@ -9,9 +9,7 @@ import { fishes } from './data/fish//allfish.js';
 
 
 
-function trackDataIdClicks(dataIdValue) {
-    console.log("data", dataIdValue);
-    
+function trackDataIdClicks(dataIdValue) {    
     ga('send', 'event', 'Clic', 'DataId', dataIdValue);
 }
 
@@ -285,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(".season-max-points .mm-value").innerHTML = currentMinPoints + currentMinPoints * 0.2;
 
 
-        document.querySelector("#no-shadow").setAttribute("data-noshadow", currentFish.attributes[0].shadow[0] === false ? true : false);
+        document.querySelector("#no-shadow").setAttribute("data-noshadow", typeof currentFish.attributes[0].shadow[0] == "undefined" ? true : false);
 
         currentFish.attributes.forEach(attribute => {
             const attributeName = Object.keys(attribute)[0];
@@ -344,58 +342,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         // Todo Fix monster rotation
-        if (currentFish.type == "monster" && false) {
-
-            function getDateOfDay(offset) {
-                var currentDate = new Date();
-                currentDate.setDate(currentDate.getDate() + offset);
-                return currentDate;
-            }
-
-            function formatDate(date) {
-                var month = ('0' + (date.getMonth() + 1)).slice(-2);
-                var day = ('0' + date.getDate()).slice(-2);
-
-                return month + '/' + day;
-            }
-
-
-            function getDateConstraint(date, length) {
-                var baseDate = new Date('2023-06-01');
-                var diffInDays = Math.floor((date - baseDate) / (1000 * 60 * 60 * 24));
-                var cycleLength = length;
-                var result = (diffInDays % cycleLength + cycleLength) % cycleLength;
-                return result;
-            }
-
-            Array.from(document.querySelectorAll("#positions-container > div")).forEach((spot, index, array) => {
-
-                const len = array.length;
-                const start = index - 1;
-
-                spot.setAttribute("data-spot-day", formatDate(getDateOfDay(start)));
-
-                var inputDate = getDateOfDay(start)
-                var constraint = getDateConstraint(inputDate, len);
-
-
-
-                console.log("date=", formatDate(getDateOfDay(start)), "spot index=", index, " ", constraint);
-
-                spot.setAttribute("data-today-spot", "false")
-
-
-                if (start == 0) {
-                    spot.setAttribute("data-today-spot", "true")
+        if (currentFish.type == "monster") {
+            function setTodaySpot(date, collection, referenceDate) {
+                const timeDiff = Math.floor((date - referenceDate) / (1000 * 60 * 60 * 24));
+              
+                const index = timeDiff >= 0 ? timeDiff % collection.length : (collection.length + timeDiff) % collection.length;
+              
+                for (let i = 0; i < collection.length; i++) {
+                  collection[i].setAttribute('data-today-spot', 'false');
+                  collection[i].removeAttribute('data-spot-day');
                 }
-
-
-            })
+              
+                collection[index].setAttribute('data-today-spot', 'true');
+                const day = (referenceDate.getDate() + timeDiff).toString().padStart(2, '0');
+                const month = (referenceDate.getMonth() + 1).toString().padStart(2, '0');
+                const formattedDate = `${month}/${day}`;
+                collection[index].setAttribute('data-spot-day', formattedDate);
+              }
+              
+              
+              
+              const currentDate = new Date().setDate(new Date().getDate() + 0);;
+              const htmlCollection = document.getElementsByClassName('ccross');
+              const referenceDate = new Date(2023, 5, 1);
+              
+              setTodaySpot(currentDate, htmlCollection, referenceDate);
         }
 
         document.querySelector(".active")?.classList.remove("active");
         document.querySelector(`[data-id="${id}"]`).classList.add("active");
-        //43474d
+        
+
+        if(currentFish.difficulty !== 'undefined'){            
+            Array.from(document.querySelectorAll(".difficulty")).forEach((elem, index) => {
+                if(currentFish.difficulty == index){
+                    elem.style.display = "block";
+                }
+                else{
+                    elem.style.display = "none";
+                }
+            })
+        }
+        
+        document.querySelector("html").setAttribute("class", currentFish.type)
 
 
     }

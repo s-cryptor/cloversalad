@@ -6,6 +6,7 @@ export const alaskaFish = [
         name: {
             eng: "arctic char"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -36,23 +37,11 @@ export const alaskaFish = [
         map: "alaska",
         positions: [
             {
-                x: 65,
-                y: 40
-            },
-            {
-                x: 65,
+                x: 30,
                 y: 85
-            },
-            {
-                x: 80,
-                y: 45
-            },
-            {
-                x: 35,
-                y: 15
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "32",
@@ -60,6 +49,7 @@ export const alaskaFish = [
         name: {
             eng: "atka mackerel"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [3] },
             { rods: [0,1,2,3,4,5] },
@@ -106,7 +96,7 @@ export const alaskaFish = [
                 y: 85
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "33",
@@ -114,6 +104,7 @@ export const alaskaFish = [
         name: {
             eng: "yellow irish lord"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -160,7 +151,7 @@ export const alaskaFish = [
                 y: 20
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "34",
@@ -168,6 +159,7 @@ export const alaskaFish = [
         name: {
             eng: "lancetfish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -214,7 +206,7 @@ export const alaskaFish = [
                 y: 65
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "35",
@@ -222,6 +214,7 @@ export const alaskaFish = [
         name: {
             eng: "steelhead"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2,3] },
             { rods: [0,1,2,3,4,5] },
@@ -268,7 +261,7 @@ export const alaskaFish = [
                 y: 20
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "36",
@@ -276,6 +269,7 @@ export const alaskaFish = [
         name: {
             eng: "silver salmon"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2,3] },
             { rods: [0,1,2,3,4,5] },
@@ -322,7 +316,7 @@ export const alaskaFish = [
                 y: 20
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "37",
@@ -330,6 +324,7 @@ export const alaskaFish = [
         name: {
             eng: "rougheye rockfish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -376,7 +371,7 @@ export const alaskaFish = [
                 y: 50
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "38",
@@ -384,6 +379,7 @@ export const alaskaFish = [
         name: {
             eng: "pacific herring"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [] },
             { rods: [0,1,2,3,4,5] },
@@ -438,6 +434,7 @@ export const alaskaFish = [
         name: {
             eng: "sockeye salmon"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -484,7 +481,7 @@ export const alaskaFish = [
                 y: 40
             }
         ],
-        positionNote: "Widespread fish"
+        positionNote: ""
     },
     {
         id: "310",
@@ -492,6 +489,7 @@ export const alaskaFish = [
         name: {
             eng: "dolly varden"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -538,7 +536,7 @@ export const alaskaFish = [
                 y: 40
             }
         ],
-        positionNote: "Widespread fish"
+        positionNote: ""
     },
     {
         id: "311",
@@ -546,6 +544,7 @@ export const alaskaFish = [
         name: {
             eng: "coalfish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -592,7 +591,7 @@ export const alaskaFish = [
                 y: 15
             }
         ],
-        positionNote: "Widespread fish"
+        positionNote: ""
     },
     {
         id: "312",
@@ -600,10 +599,11 @@ export const alaskaFish = [
         name: {
             eng: "chum salmon"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
-            { moment: [1] }
+            { moment: [0] }
         ],
         seasons: [
             false,
@@ -646,7 +646,7 @@ export const alaskaFish = [
                 y: 50
             }
         ],
-        positionNote: "Widespread fish"
+        positionNote: ""
     },
     {
         id: "313",
@@ -654,10 +654,11 @@ export const alaskaFish = [
         name: {
             eng: "capelin"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [] },
             { rods: [0,1,2,3,4,5] },
-            { moment: [1] }
+            { moment: [0] }
         ],
         seasons: [
             true,
@@ -708,6 +709,7 @@ export const alaskaFish = [
         name: {
             eng: "burbot"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2,3] },
             { rods: [0,1,2,3,4,5] },
@@ -754,7 +756,7 @@ export const alaskaFish = [
                 y: 15
             }
         ],
-        positionNote: "Widespread fish."
+        positionNote: ""
     },
     {
         id: "315",
@@ -762,6 +764,7 @@ export const alaskaFish = [
         name: {
             eng: "bigmouth sculpin"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -808,7 +811,7 @@ export const alaskaFish = [
                 y: 15
             }
         ],
-        positionNote: "Widespread fish."
+        positionNote: ""
     },
     {
         id: "316",
@@ -816,6 +819,7 @@ export const alaskaFish = [
         name: {
             eng: "arctic greyling"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -862,7 +866,7 @@ export const alaskaFish = [
                 y: 15
             }
         ],
-        positionNote: "Widespread fish."
+        positionNote: ""
     },
     {
         id: "317",
@@ -870,6 +874,7 @@ export const alaskaFish = [
         name: {
             eng: "humpback salmon"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1] },
             { rods: [0,1,2,3,4,5] },
@@ -916,7 +921,7 @@ export const alaskaFish = [
                 y: 20
             }
         ],
-        positionNote: "Widespread fish."
+        positionNote: ""
     },
     {
         id: "318",
@@ -924,6 +929,7 @@ export const alaskaFish = [
         name: {
             eng: "halibut"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3,4] },
             { rods: [2,3,5] },
@@ -966,6 +972,7 @@ export const alaskaFish = [
         name: {
             eng: "blue lingcod"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [2,3,5] },
@@ -1012,7 +1019,7 @@ export const alaskaFish = [
                 y: 15
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "320",
@@ -1020,6 +1027,7 @@ export const alaskaFish = [
         name: {
             eng: "spiny skate"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [2,3,5] },
@@ -1090,6 +1098,7 @@ export const alaskaFish = [
         name: {
             eng: "wolf eel"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [2,3,5] },
@@ -1136,6 +1145,7 @@ export const alaskaFish = [
         name: {
             eng: "king salmon"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [2,3,5] },
@@ -1182,6 +1192,7 @@ export const alaskaFish = [
         name: {
             eng: "salmon shark"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3] },
             { rods: [2,3,5] },
@@ -1228,6 +1239,7 @@ export const alaskaFish = [
         name: {
             eng: "pacific sleeper shark"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3,4] },
             { rods: [2,3,5] },
@@ -1278,6 +1290,7 @@ export const alaskaFish = [
         name: {
             eng: "sunfish"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2] },
             { rods: [2,3,5] },
@@ -1320,6 +1333,7 @@ export const alaskaFish = [
         name: {
             eng: "kraken"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [9] },
             { rods: [2,3,5] },

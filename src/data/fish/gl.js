@@ -5,6 +5,7 @@ export const glFish = [
         name: {
             eng: "alewife"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [] },
             { rods: [0,1,2,3,4,5] },
@@ -59,6 +60,7 @@ export const glFish = [
         name: {
             eng: "brook trout"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -101,6 +103,7 @@ export const glFish = [
         name: {
             eng: "brown trout"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2,3] },
             { rods: [0,1,2,3,4,5] },
@@ -147,6 +150,7 @@ export const glFish = [
         name: {
             eng: "largemouth bass"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -189,6 +193,7 @@ export const glFish = [
         name: {
             eng: "yellow perch"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -243,6 +248,7 @@ export const glFish = [
         name: {
             eng: "white crappie"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -297,6 +303,7 @@ export const glFish = [
         name: {
             eng: "white bass"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
@@ -343,6 +350,7 @@ export const glFish = [
         name: {
             eng: "walleye"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -393,6 +401,7 @@ export const glFish = [
         name: {
             eng: "sea lamprey"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -447,6 +456,7 @@ export const glFish = [
         name: {
             eng: "pink salmon"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -489,6 +499,7 @@ export const glFish = [
         name: {
             eng: "smallmouth bass"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [1,2] },
             { rods: [0,1,2,3,4,5] },
@@ -531,6 +542,7 @@ export const glFish = [
         name: {
             eng: "round whitefish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0] },
             { rods: [0,1,2,3,4,5] },
@@ -581,6 +593,7 @@ export const glFish = [
         name: {
             eng: "redear sunfish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [0] },
             { rods: [0,1,2,3,4,5] },
@@ -623,6 +636,7 @@ export const glFish = [
         name: {
             eng: "channel catfish"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [3] },
             { rods: [0,1,2,3,4,5] },
@@ -665,6 +679,7 @@ export const glFish = [
         name: {
             eng: "bloater"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [] },
             { rods: [0,1,2,3,4,5] },
@@ -723,6 +738,7 @@ export const glFish = [
         name: {
             eng: "coho salmon"
         },
+        difficulty: 0,
         attributes: [
             { shadow: [2] },
             { rods: [0,1,2,3,4,5] },
@@ -766,6 +782,7 @@ export const glFish = [
         name: {
             eng: "chinook salmon"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [1,2,3,5] },
@@ -808,6 +825,7 @@ export const glFish = [
         name: {
             eng: "muskie"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [1,2,3,5] },
@@ -858,6 +876,7 @@ export const glFish = [
         name: {
             eng: "flathead catfish"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [1,2,3,5] },
@@ -906,6 +925,7 @@ export const glFish = [
         name: {
             eng: "lake trout"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2,3] },
             { rods: [1,2,3,5] },
@@ -952,6 +972,7 @@ export const glFish = [
         name: {
             eng: "longnose gar"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2] },
             { rods: [2,3,5] },
@@ -994,6 +1015,7 @@ export const glFish = [
         name: {
             eng: "american eel"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [2] },
             { rods: [2,3,5] },
@@ -1036,6 +1058,7 @@ export const glFish = [
         name: {
             eng: "goldfish"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [0,1] },
             { rods: [2,3,5] },
@@ -1078,6 +1101,7 @@ export const glFish = [
         name: {
             eng: "lake sturgeon"
         },
+        difficulty: 1,
         attributes: [
             { shadow: [3,4] },
             { rods: [2,3,5] },
@@ -1120,6 +1144,7 @@ export const glFish = [
         name: {
             eng: "bessie"
         },
+        difficulty: 2,
         attributes: [
             { shadow: [9] },
             { rods: [2,3,5] },
