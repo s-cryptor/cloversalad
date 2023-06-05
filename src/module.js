@@ -53,7 +53,8 @@ export function createList(fish) {
 
     const item = document.createElement("div");
     item.setAttribute("class", `item is-flex is-align-items-center py-1 px-4 map-${fish.map} ${fish.type}`);
-    item.setAttribute("data-id", fish.id)
+    item.setAttribute("data-id", fish.id);
+    item.setAttribute("data-season", fish.seasons[new Date().getMonth()] ? "in" : "out")
     if(fish.inprogress){
         item.setAttribute("style", "pointer-events:none;background-color: #191919;color: #853535;");
     }
@@ -68,6 +69,8 @@ export function createList(fish) {
     p.setAttribute("class", "is-size-6 fishp");
     p.innerHTML = fish.name.eng;
     item.appendChild(p)
+    
+
 
 
     document.querySelector(`#list-${fish.map} .inner-list`).appendChild(item)

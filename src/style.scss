@@ -765,6 +765,7 @@ body.c{
     color:var(--text);
 }
 .item{
+    position:relative;
     &.active{
         background-color: #464747;
         color: white;
@@ -1050,6 +1051,17 @@ div.box{
     img{
         width:100%;
         height: auto;
+    }
+}
+[data-season="out"]{
+    color:var(--red);
+    &:after{
+        content:"oos";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3%;
     }
 }
 .ccross{
