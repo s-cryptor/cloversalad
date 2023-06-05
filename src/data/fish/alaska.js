@@ -426,7 +426,7 @@ export const alaskaFish = [
                 y: 50
             }
         ],
-        positionNote: "Widespread fish<br>Difficult to find (no shadow)."
+        positionNote: ""
     },
     {
         id: "39",
@@ -701,7 +701,7 @@ export const alaskaFish = [
                 y: 50
             }
         ],
-        positionNote: "Difficult to find (no shadow)."
+        positionNote: ""
     },
     {
         id: "314",
@@ -964,7 +964,7 @@ export const alaskaFish = [
                 y: 25
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "319",
@@ -1188,7 +1188,7 @@ export const alaskaFish = [
                 y: 75
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "323",
@@ -1235,7 +1235,7 @@ export const alaskaFish = [
                 y: 75
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "324",

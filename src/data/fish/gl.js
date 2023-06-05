@@ -52,7 +52,7 @@ export const glFish = [
                 y: 80
             }
         ],
-        positionNote: "No shadow</br>This fish is everywhere and nowhere at the same time. Quite difficult to farm."
+        positionNote: ""
     },
     {
         id: "12",
@@ -95,7 +95,7 @@ export const glFish = [
                 y: 45
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm."
+        positionNote: ""
     },
     {
         id: "13",
@@ -142,7 +142,7 @@ export const glFish = [
                 y: 30
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "14",
@@ -185,7 +185,7 @@ export const glFish = [
                 y: 15
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "15",
@@ -240,7 +240,7 @@ export const glFish = [
                 y: 50
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "16",
@@ -295,7 +295,7 @@ export const glFish = [
                 y: 50
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "17",
@@ -342,7 +342,7 @@ export const glFish = [
                 y: 30
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "18",
@@ -393,7 +393,7 @@ export const glFish = [
                 y: 80
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "19",
@@ -448,7 +448,7 @@ export const glFish = [
                 y: 50
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "110",
@@ -491,7 +491,7 @@ export const glFish = [
                 y: 50
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm."
+        positionNote: ""
     },
     {
         id: "111",
@@ -534,7 +534,7 @@ export const glFish = [
                 y: 15
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm."
+        positionNote: ""
     },
     {
         id: "112",
@@ -585,7 +585,7 @@ export const glFish = [
                 y: 75
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "113",
@@ -628,7 +628,7 @@ export const glFish = [
                 y: 15
             }
         ],
-        positionNote: "Easy to find, but a bit more complicated to farm."
+        positionNote: ""
     },
     {
         id: "114",
@@ -671,7 +671,7 @@ export const glFish = [
                 y: 75
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "115",
@@ -730,7 +730,7 @@ export const glFish = [
                 y: 75
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find, but very difficult to farm."
+        positionNote: ""
     },
     {
         id: "116",
@@ -774,7 +774,7 @@ export const glFish = [
             }
             
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "117",
@@ -817,7 +817,7 @@ export const glFish = [
                 y: 55
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "118",
@@ -868,7 +868,7 @@ export const glFish = [
                 y: 45
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "119",
@@ -917,7 +917,7 @@ export const glFish = [
                 y: 25
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "120",
@@ -964,7 +964,7 @@ export const glFish = [
                 y: 40
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "121",
@@ -1007,7 +1007,7 @@ export const glFish = [
                 y: 10
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "122",
@@ -1050,7 +1050,7 @@ export const glFish = [
                 y: 65
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "123",
@@ -1093,7 +1093,7 @@ export const glFish = [
                 y: 70
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "124",
@@ -1136,7 +1136,7 @@ export const glFish = [
                 y: 15
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "125",

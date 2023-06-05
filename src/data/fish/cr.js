@@ -44,7 +44,7 @@ export const crFish = [
                 y: 25
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "22",
@@ -91,7 +91,7 @@ export const crFish = [
                 y: 45
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "23",
@@ -138,7 +138,7 @@ export const crFish = [
                 y: 80
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "24",
@@ -185,7 +185,7 @@ export const crFish = [
                 y: 90
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "25",
@@ -232,7 +232,7 @@ export const crFish = [
                 y: 15
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "26",
@@ -279,7 +279,7 @@ export const crFish = [
                 y: 35
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "27",
@@ -326,7 +326,7 @@ export const crFish = [
                 y: 35
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "28",
@@ -377,7 +377,7 @@ export const crFish = [
                 y: 55
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "29",
@@ -428,7 +428,7 @@ export const crFish = [
                 y: 50
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "210",
@@ -483,7 +483,7 @@ export const crFish = [
                 y: 25
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "211",
@@ -534,7 +534,7 @@ export const crFish = [
                 y: 55
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "212",
@@ -585,7 +585,7 @@ export const crFish = [
                 y: 90
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "213",
@@ -644,7 +644,7 @@ export const crFish = [
                 y: 15
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "214",
@@ -695,7 +695,7 @@ export const crFish = [
                 y: 55
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "215",
@@ -738,7 +738,7 @@ export const crFish = [
                 y: 15
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find in great depths but can be found almost everywhere else."
+        positionNote: ""
     },
     {
         id: "216",
@@ -781,7 +781,7 @@ export const crFish = [
                 y: 15
             }
         ],
-        positionNote: "Widespread fish<br>Easy to find in great depths but can be found almost everywhere else."
+        positionNote: ""
     },
     {
         id: "217",
@@ -828,7 +828,7 @@ export const crFish = [
                 y: 85
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm"
+        positionNote: ""
     },
     {
         id: "218",
@@ -875,7 +875,7 @@ export const crFish = [
                 y: 85
             }
         ],
-        positionNote: "Difficult to find. Try the East spot first, and be patient."
+        positionNote: ""
     },
     {
         id: "219",
@@ -922,7 +922,7 @@ export const crFish = [
                 y: 85
             }
         ],
-        positionNote: "Difficult to find. Try at Great Depths first, and be patient."
+        positionNote: ""
     },
     {
         id: "220",
@@ -965,7 +965,7 @@ export const crFish = [
                 y: 25
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find, easy to farm."
+        positionNote: ""
     },
     { 
         id: "221",
@@ -1008,7 +1008,7 @@ export const crFish = [
                 y: 25
             }
         ],
-        positionNote: "Very difficult to find.<br>Many players spend many hours before managing to get their first WS. Be patient.<br>(Not sure if it has a shadow or not.)"
+        positionNote: ""
     },
     { 
         id: "222",
