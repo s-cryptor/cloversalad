@@ -19,6 +19,7 @@ html{
     --green: #04ab1b;
 }
 
+
 body{
     max-width:100vw;
 }
@@ -1241,6 +1242,18 @@ input[type="number"] {
 
 
   @media screen and (max-width: 600px) {
+    .container{
+        padding: 0!important;
+        background-color: transparent;
+    }
+    .cbox{
+        background-color: var(--darkMed);
+        border: none;
+    }
+    .cscrollable{
+        padding-left:0!important;
+        padding-right:0!important;
+    }
     .csidebar{
         position: fixed;
         width: calc(100vw - 80px)!important;
