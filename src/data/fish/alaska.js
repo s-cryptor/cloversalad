@@ -1343,7 +1343,7 @@ export const alaskaFish = [
         },
         difficulty: 2,
         attributes: [
-            { shadow: [9] },
+            { shadow: [] },
             { rods: [2,3,5] },
             { moment: [0,1] }
         ],
