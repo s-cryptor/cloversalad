@@ -1135,9 +1135,13 @@ export const alaskaFish = [
             {
                 x: 70,
                 y: 85
+            },
+            {
+                x: 80,
+                y: 45
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find"
+        positionNote: ""
     },
     {
         id: "322",
@@ -1280,9 +1284,13 @@ export const alaskaFish = [
             {
                 x: 30,
                 y: 85
+            },
+            {
+                x: 80,
+                y: 15
             }
         ],
-        positionNote: "Well identified position.<br>Easy to find."
+        positionNote: ""
     },
     {
         id: "325",
