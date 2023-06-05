@@ -1053,6 +1053,7 @@ export const australiaFish = [
             { rods: [2,3,5] },
             { moment: [0,1] }
         ],
+        difficulty:2,
         seasons: [
             true,
             true,
@@ -1078,6 +1079,10 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
+                x:30,
+                y:60
+            },
+            {
                 x:80,
                 y:90
             },
@@ -1095,10 +1100,11 @@ export const australiaFish = [
             eng: "Smooth Oreo Dory"
         },
         attributes: [
-            { shadow: [1] },
+            { shadow: [1,2] },
             { rods: [2,3,5] },
             { moment: [0,1] }
         ],
+        difficulty: 1,
         seasons: [
             true,
             true,

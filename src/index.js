@@ -9,7 +9,7 @@ import { fishes } from './data/fish//allfish.js';
 
 
 
-function trackDataIdClicks(dataIdValue) {    
+function trackDataIdClicks(dataIdValue) {
     ga('send', 'event', 'Clic', 'DataId', dataIdValue);
 }
 
@@ -341,49 +341,56 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
 
-        // Todo Fix monster rotation
         if (currentFish.type == "monster") {
+
             function setTodaySpot(date, collection, referenceDate) {
-                const timeDiff = Math.floor((date - referenceDate) / (1000 * 60 * 60 * 24));
-              
-                const index = timeDiff >= 0 ? timeDiff % collection.length : (collection.length + timeDiff) % collection.length;
-              
+
                 for (let i = 0; i < collection.length; i++) {
-                  collection[i].setAttribute('data-today-spot', 'false');
-                  collection[i].removeAttribute('data-spot-day');
+ 
+
+
+                    let dateN = new Date(date);
+                    dateN.setDate(dateN.getDate() + (i - 1));
+                    const dateText = (dateN.getMonth() + 1).toString().padStart(2, "0") + "/" + dateN.getDate().toString().padStart(2, "0")
+
+                    const timeDiff = Math.floor((dateN - referenceDate) / (1000 * 60 * 60 * 24));
+                    const index = timeDiff >= 0 ? timeDiff % collection.length : (collection.length + timeDiff) % collection.length;
+
+                    collection[index].setAttribute('data-today-spot', 'false');
+                    collection[index].removeAttribute('data-spot-day'); 
+
+                    if (dateN.getDate() == new Date(date).getDate()) {
+                        collection[index].setAttribute('data-today-spot', 'true');
+
+                    }
+                    collection[index].setAttribute('data-spot-day', dateText);
+
                 }
-              
-                collection[index].setAttribute('data-today-spot', 'true');
-                const day = (referenceDate.getDate() + timeDiff).toString().padStart(2, '0');
-                const month = (referenceDate.getMonth() + 1).toString().padStart(2, '0');
-                const formattedDate = `${month}/${day}`;
-                collection[index].setAttribute('data-spot-day', formattedDate);
-              }
-              
-              
-              
-              const currentDate = new Date().setDate(new Date().getDate() + 0);;
-              const htmlCollection = document.getElementsByClassName('ccross');
-              const referenceDate = new Date(2023, 5, 1);
-              
-              setTodaySpot(currentDate, htmlCollection, referenceDate);
+            }
+
+
+            const currentDate = new Date().setDate(new Date().getDate() + 0);
+            const htmlCollection = document.getElementsByClassName('ccross');
+            const referenceDate = new Date(2023, 5, 1);
+
+            setTodaySpot(currentDate, htmlCollection, referenceDate);
         }
 
         document.querySelector(".active")?.classList.remove("active");
         document.querySelector(`[data-id="${id}"]`).classList.add("active");
-        
 
-        if(currentFish.difficulty !== 'undefined'){            
+
+        if (currentFish.difficulty !== 'undefined') {
             Array.from(document.querySelectorAll(".difficulty")).forEach((elem, index) => {
-                if(currentFish.difficulty == index){
+                if (currentFish.difficulty == index) {
                     elem.style.display = "block";
                 }
-                else{
+                else {
                     elem.style.display = "none";
                 }
             })
         }
-        
+
         document.querySelector("html").setAttribute("class", currentFish.type)
 
 
@@ -439,9 +446,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (input.getAttribute("id") == "weight") {
                 if (input.value >= currentFish[unit].min && input.value <= currentFish[unit].max) {
                     if (/^\d+(\.\d{3})$/.test(input.value)) {
-                    const currentPercent = ((input.value - currentFish[unit].min) / (currentFish[unit].max - currentFish[unit].min)) * 100;
+                        const currentPercent = ((input.value - currentFish[unit].min) / (currentFish[unit].max - currentFish[unit].min)) * 100;
 
-                    updateRange(currentPercent)
+                        updateRange(currentPercent)
                     }
                 }
             }
@@ -453,7 +460,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains("list-title")) {
             e.target.closest(".list-container").classList.toggle("hidden-list");
         }
-        if(e.target.classList.contains("fishp")){
+        if (e.target.classList.contains("fishp")) {
             const clickedId = e.target.closest(".item").getAttribute("data-id");
             trackDataIdClicks(clickedId)
         }
@@ -502,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.dispatchEvent(eventScrollBetween0And50);
         }
     });
-  
+
 });
 
 

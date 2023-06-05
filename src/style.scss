@@ -1089,6 +1089,7 @@ div.box{
     }
     &[data-today-spot="true"]{
         border: 2px solid var(--green);
+        z-index:2;
         &:after{
             background-color:var(--green);
         }
