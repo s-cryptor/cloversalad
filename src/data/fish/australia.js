@@ -233,42 +233,45 @@ export const australiaFish = [
     {
         id: "45",
         type: "common",
-        inprogress: true,
         name: {
-            eng: "N/A"
+            eng: "port Jackson Shark"
         },
         attributes: [
             { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { rods: [1,2,3,5] },
+            { moment: [0,1] }
         ],
+        difficulty:1,
         seasons: [
             false,
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
             false,
             false
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 5,
+            max: 16
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 11.02,
+            max: 35.27
         },
         map: "australia",
         positions: [
-
+            {
+                x:75,
+                y:20
+            }
         ],
-        positionNote: ""
+        positionNote: "Not sure yet if it has a shadow and if so, what size it is. Please help<br>Also need to confirm the spot (only caught one here)"
     },
     {
         id: "46",
@@ -313,6 +316,10 @@ export const australiaFish = [
             {
                 x:50,
                 y:30
+            },
+            {
+                x:60,
+                y:95
             }
         ],
         positionNote: ""
