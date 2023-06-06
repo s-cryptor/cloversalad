@@ -222,9 +222,13 @@ export const australiaFish = [
             {
                 x: 30,
                 y: 60
+            },
+            {
+                x:55,
+                y:80
             }
         ],
-        positionNote: "Well identified position."
+        positionNote: ""
     },
     {
         id: "45",
@@ -560,18 +564,18 @@ export const australiaFish = [
             { moment: [] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
             min: 0.1,
@@ -586,10 +590,18 @@ export const australiaFish = [
             {
                 x:5,
                 y:95
+            },
+            {
+                x:30,
+                y:65
+            },
+            {
+                x:10,
+                y:45
             }
 
         ],
-        positionNote: ""
+        positionNote: "!!BUG!!<br>No data about this fish. It carasteristics are not available in the in game bestiary."
     },
     {
         id: "413",
@@ -1049,7 +1061,7 @@ export const australiaFish = [
             eng: "Queensland Grouper"
         },
         attributes: [
-            { shadow: [2] },
+            { shadow: [3,4] },
             { rods: [2,3,5] },
             { moment: [0,1] }
         ],
