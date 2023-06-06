@@ -1364,42 +1364,44 @@ export const australiaFish = [
     },
     {
         id: "429",
-        type: "common",
-        inprogress: true,
+        type: "epic",
         name: {
-            eng: "N/A"
+            eng: "Hoodwinker Sunfish"
         },
         attributes: [
             { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { rods: [2,3,5] },
+            { moment: [0] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 300,
+            max: 2000
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 661.39,
+            max: 4409.25
         },
         map: "australia",
         positions: [
-
+            {
+                x:95,
+                y:65
+            }
         ],
-        positionNote: ""
+        positionNote: "Not sure if it has a shadow or not. Please confirm if you want to <3"
     }
 ]
