@@ -3,7 +3,9 @@ export const glFish = [
         id: "11",
         type: "common",
         name: {
-            eng: "alewife"
+            en: "alewife",
+            fr: "gaspareau",
+            pt: "alosa cinzenta"
         },
         difficulty: 0,
         attributes: [
@@ -58,7 +60,9 @@ export const glFish = [
         id: "12",
         type: "common",
         name: {
-            eng: "brook trout"
+            en: "brook trout",
+            fr: "omble des fontaines",
+            pt: "truta de riacho"
         },
         difficulty: 0,
         attributes: [
@@ -101,7 +105,9 @@ export const glFish = [
         id: "13",
         type: "common",
         name: {
-            eng: "brown trout"
+            en: "brown trout",
+            fr: "truite brune",
+            pt: "truta marisca"
         },
         difficulty: 0,
         attributes: [
@@ -148,7 +154,9 @@ export const glFish = [
         id: "14",
         type: "common",
         name: {
-            eng: "largemouth bass"
+            en: "largemouth bass",
+            fr: "achigan à grande bouche",
+            pt: "achigã"
         },
         difficulty: 0,
         attributes: [
@@ -191,7 +199,9 @@ export const glFish = [
         id: "15",
         type: "common",
         name: {
-            eng: "yellow perch"
+            en: "yellow perch",
+            fr: "perchaude",
+            pt: "perca amarela"
         },
         difficulty: 0,
         attributes: [
@@ -246,7 +256,9 @@ export const glFish = [
         id: "16",
         type: "common",
         name: {
-            eng: "white crappie"
+            en: "white crappie",
+            fr: "crapet calicot",
+            pt: "promoxis"
         },
         difficulty: 0,
         attributes: [
@@ -301,7 +313,9 @@ export const glFish = [
         id: "17",
         type: "common",
         name: {
-            eng: "white bass"
+            en: "white bass",
+            fr: "bar blanc",
+            pt: "bass branco"
         },
         difficulty: 0,
         attributes: [
@@ -348,7 +362,9 @@ export const glFish = [
         id: "18",
         type: "common",
         name: {
-            eng: "walleye"
+            en: "walleye",
+            fr: "doré jaune",
+            pt: "picão-verde"
         },
         difficulty: 0,
         attributes: [
@@ -399,7 +415,9 @@ export const glFish = [
         id: "19",
         type: "common",
         name: {
-            eng: "sea lamprey"
+            en: "sea lamprey",
+            fr: "lamproie marine",
+            pt: "lampreia-marinha"
         },
         difficulty: 0,
         attributes: [
@@ -454,7 +472,9 @@ export const glFish = [
         id: "110",
         type: "common",
         name: {
-            eng: "pink salmon"
+            en: "pink salmon",
+            fr: "saumon rose à bosse",
+            pt: "salmão-rosado"
         },
         difficulty: 0,
         attributes: [
@@ -497,7 +517,9 @@ export const glFish = [
         id: "111",
         type: "common",
         name: {
-            eng: "smallmouth bass"
+            en: "smallmouth bass",
+            fr: "achigan à petite bouche",
+            pt: "achigã-boca-pequena"
         },
         difficulty: 0,
         attributes: [
@@ -540,7 +562,9 @@ export const glFish = [
         id: "112",
         type: "common",
         name: {
-            eng: "round whitefish"
+            en: "round whitefish",
+            fr: "ménomini rond",
+            pt: "peixe branco redondo"
         },
         difficulty: 0,
         attributes: [
@@ -591,7 +615,9 @@ export const glFish = [
         id: "113",
         type: "common",
         name: {
-            eng: "redear sunfish"
+            en: "redear sunfish",
+            fr: "crapet à oreilles rouges",
+            pt: "poleiro do sol"
         },
         difficulty: 0,
         attributes: [
@@ -634,7 +660,9 @@ export const glFish = [
         id: "114",
         type: "common",
         name: {
-            eng: "channel catfish"
+            en: "channel catfish",
+            fr: "barbue de rivière",
+            pt: "bagre-americano"
         },
         difficulty: 0,
         attributes: [
@@ -677,7 +705,9 @@ export const glFish = [
         id: "115",
         type: "common",
         name: {
-            eng: "bloater"
+            en: "bloater",
+            fr: "bloater",
+            pt: "inchado"
         },
         difficulty: 0,
         attributes: [
@@ -736,7 +766,9 @@ export const glFish = [
         id: "116",
         type: "common",
         name: {
-            eng: "coho salmon"
+            en: "coho salmon",
+            fr: "saumon coho",
+            pt: "salmão-prateado"
         },
         difficulty: 0,
         attributes: [
@@ -780,7 +812,9 @@ export const glFish = [
         id: "117",
         type: "rare",
         name: {
-            eng: "chinook salmon"
+            en: "chinook salmon",
+            fr: "saumon royal",
+            pt: "salmão-rei"
         },
         difficulty: 1,
         attributes: [
@@ -823,7 +857,9 @@ export const glFish = [
         id: "118",
         type: "rare",
         name: {
-            eng: "muskie"
+            en: "muskie",
+            fr: "maskinongé",
+            pt: "lùcio-almiscarado"
         },
         difficulty: 1,
         attributes: [
@@ -878,7 +914,9 @@ export const glFish = [
         id: "119",
         type: "rare",
         name: {
-            eng: "flathead catfish"
+            en: "flathead catfish",
+            fr: "poisson-chat à tête plate",
+            pt: "peixe-gato amarelo"
         },
         difficulty: 1,
         attributes: [
@@ -931,7 +969,9 @@ export const glFish = [
         id: "120",
         type: "rare",
         name: {
-            eng: "lake trout"
+            en: "lake trout",
+            fr: "le touladi",
+            pt: "truta de lago"
         },
         difficulty: 1,
         attributes: [
@@ -978,7 +1018,9 @@ export const glFish = [
         id: "121",
         type: "epic",
         name: {
-            eng: "longnose gar"
+            en: "longnose gar",
+            fr: "lépisosté osseux",
+            pt: "lepisosteus"
         },
         difficulty: 1,
         attributes: [
@@ -1021,7 +1063,9 @@ export const glFish = [
         id: "122",
         type: "epic",
         name: {
-            eng: "american eel"
+            en: "american eel",
+            fr: "anguille d'amérique",
+            pt: "enguia-americana"
         },
         difficulty: 1,
         attributes: [
@@ -1064,7 +1108,9 @@ export const glFish = [
         id: "123",
         type: "epic",
         name: {
-            eng: "goldfish"
+            en: "goldfish",
+            fr: "poisson rouge",
+            pt: "quinguio"
         },
         difficulty: 1,
         attributes: [
@@ -1107,7 +1153,9 @@ export const glFish = [
         id: "124",
         type: "epic",
         name: {
-            eng: "lake sturgeon"
+            en: "lake sturgeon",
+            fr: "esturgeon jaune",
+            pt: "esturjão de lago"
         },
         difficulty: 1,
         attributes: [
@@ -1150,7 +1198,9 @@ export const glFish = [
         id: "125",
         type: "monster",
         name: {
-            eng: "bessie"
+            en: "bessie",
+            fr: "bessie",
+            pt: "bessie"
         },
         difficulty: 2,
         attributes: [

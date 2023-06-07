@@ -23,6 +23,21 @@ function updateQueryParam(key, value) {
 }
 
 
+function getCookieValue(name) {
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i].trim();
+      if (cookie.startsWith(name + '=')) {
+        return cookie.substring(name.length + 1);
+      }
+    }
+    return '';
+  }
+  
+  
+let lang = getCookieValue("language") ? getCookieValue("language") : "en";
+
+
 function findMatchingId(originalId, tolerance) {
     const originalFish = _.find(fishes, { id: originalId });
 
@@ -96,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(document.querySelectorAll("[data-unit")).forEach(element => {
             element.setAttribute("data-unit", unit);
         })
-        loadFish(currentId);
+        loadFish(currentId, lang);
     })
 
     // Functions to open and close a modal
@@ -141,9 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    fishes.forEach(fish => {
-        createList(fish)
-    })
 
     function toggleSideMenu() {
         document.querySelector(".csidebar").classList.toggle("visible");
@@ -209,51 +221,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    function setLang(lang) {
 
-
-
-    /*
-    document.addEventListener('touchstart', handleTouchStart, false);
-    document.addEventListener('touchmove', handleTouchMove, false);
-
-    var xDown = null;
-    var yDown = null;
-
-    function getTouches(evt) {
-        return evt.touches ||             // browser API
-            evt.originalEvent.touches; // jQuery
     }
 
-    function handleTouchStart(evt) {
-        const firstTouch = getTouches(evt)[0];
-        xDown = firstTouch.clientX;
-        yDown = firstTouch.clientY;
-    };
+    fishes.forEach(fish => {    
+        createList(fish, lang);
+    })
 
-    function handleTouchMove(evt) {
-        if (!xDown || !yDown) {
-            return;
+    function bindEventListenerToItem() {
+        Array.from(document.querySelectorAll(".item")).forEach(item => {
+            item.addEventListener("click", () => {
+                currentId = item.getAttribute("data-id")
+                loadFish(currentId, lang)
+            })
+        })
+    }
+
+    bindEventListenerToItem()
+
+    Array.from(document.querySelectorAll("[data-lang")).forEach(langBtn => {
+        let prefLang = getCookieValue("language") || "en"
+        if(langBtn.getAttribute("data-lang") == prefLang) {
+            langBtn.classList.add("selected-language")
         }
+        getCookieValue("language")
+        langBtn.addEventListener("click", () => {
+            const lang = langBtn.getAttribute("data-lang")
+            Array.from(document.querySelectorAll("[data-lang")).forEach(elem => elem.classList.remove("selected-language"));
+            langBtn.classList.add("selected-language")
+            loadFish(currentId, lang)
+            document.querySelector("#fish-list").innerHTML = "";
+            fishes.forEach(fish => {        
+                createList(fish, lang)
+            });
+            document.cookie = "language=" + lang + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";   
+            bindEventListenerToItem();        
+        })
+    })
 
-        var xUp = evt.touches[0].clientX;
-        var yUp = evt.touches[0].clientY;
-
-        var xDiff = xDown - xUp;
-        var yDiff = yDown - yUp;
-
-        if (Math.abs(xDiff) > Math.abs(yDiff)) {
-            if (xDiff > 0) {
-                toggleSideMenu()
-            } else {
-                toggleSideMenu()
-            }
-        }
-        xDown = null;
-        yDown = null;
-    };
-    */
-
-    function loadFish(id) {
+    function loadFish(id, lang) {
 
         // TODO NEIGHBOR
         console.log(findMatchingId(id, 10));
@@ -295,7 +302,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
 
-        document.getElementById("fishName").innerHTML = fish.name.eng;
+        
+        document.getElementById("fishName").innerHTML = fish.name[lang] ? fish.name[lang] : fish.name.en;
         document.getElementById("fishType").innerHTML = fish.type;
         document.getElementById("map").setAttribute("src", `./images/map-${fish.map}.jpg`);
         document.getElementById("mapName").innerHTML = fish.map;
@@ -398,15 +406,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    loadFish(currentId)
+    loadFish(currentId, lang)
 
-    Array.from(document.querySelectorAll(".item")).forEach(item => {
-        item.addEventListener("click", () => {
-            const id = item.getAttribute("data-id");
-            currentId = id;
-            loadFish(currentId)
-        })
-    })
 
     document.querySelectorAll(".months-container > div")[new Date().getMonth()].setAttribute("data-current", "true");
 

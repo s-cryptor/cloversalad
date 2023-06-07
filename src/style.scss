@@ -8,7 +8,7 @@ html{
     --textClear: #ffffff;
     --darkYellowMed : #67512d;
     --darkYellow: #605633;
-    --yellow: #de9928;
+    --yellow: #ffc61c;
     --yellowText: #fae0b5;
     --red: #c9595a;
     --redText: #ffc2c2;
@@ -749,7 +749,24 @@ h4{
 .season{
     color: var(--green)!important;
 }
-
+.language{
+    margin-right:1em;
+    text-align:center;
+    min-width:40px;
+    border:1px solid var(--text);
+    text-transform:uppercase;
+    font-size:0.9rem;
+    &.selected-language{
+        color:white;
+    }
+    cursor:pointer;
+    &:last-of-type{
+        margin-right:0;
+    }
+    &:hover{
+        color: white;
+    }
+}
 body.c{
     background-color: var(--darkMax);
     color: var(--text);
@@ -758,9 +775,8 @@ body.c{
 }
 .app-name{
     color: var(--yellow);
-}
-.app-name2{
-    font-size:0.65rem;
+    font-size:1.3rem;
+    font-weight: 300;
 }
 .c .cwhite-text{
     color:var(--text);

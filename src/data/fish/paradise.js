@@ -3,7 +3,9 @@ export const paradiseFish = [
         id: "01",
         type: "common",
         name: {
-            eng: "bluefish"
+            en: "bluefish",
+            fr: "tassergal",
+            pt: "anchova"
         },
         attributes: [
             { shadow: [1,2] },
@@ -46,7 +48,9 @@ export const paradiseFish = [
         id: "02",
         type: "common",
         name: {
-            eng: "spot-fin porcupinefish"
+            en: "spot-fin porcupinefish",
+            fr: "poisson porc-épic",
+            pt: "peixe-ouriço"
         },
         difficulty: 0,
         attributes: [
@@ -89,7 +93,9 @@ export const paradiseFish = [
         id: "03",
         type: "common",
         name: {
-            eng: "snubnose pompano"
+            en: "snubnose pompano",
+            fr: "pompaneau lune",
+            pt: "pampo"
         },
         difficulty: 0,
         attributes: [
@@ -145,7 +151,9 @@ export const paradiseFish = [
         type: "common",
         trusted: true,
         name: {
-            eng: "largetooth flounder"
+            en: "largetooth flounder",
+            fr: "flet",
+            pt: "linguando grande"
         },
         difficulty: 0,
         attributes: [
@@ -191,7 +199,9 @@ export const paradiseFish = [
         type: "common",
         trusted: true,
         name: {
-            eng: "blue trevally"
+            en: "blue trevally",
+            fr: "carangue rayée",
+            pt: "xaréu gigante"
         },
         difficulty: 0,
         attributes: [
@@ -239,7 +249,9 @@ export const paradiseFish = [
         type: "common",
         trusted: true,
         name: {
-            eng: "bonefish"
+            en: "bonefish",
+            fr: "bonefish",
+            pt: "ubarana-focinho-de-rato"
         },
         difficulty: 0,
         attributes: [
@@ -297,7 +309,9 @@ export const paradiseFish = [
         type: "common",
         trusted: true,
         name: {
-            eng: "longtail tuna"
+            en: "longtail tuna",
+            fr: "thon tonggol",
+            pt: "atum-do-indico"
         },
         difficulty: 0,
         attributes: [
@@ -341,7 +355,9 @@ export const paradiseFish = [
         type: "common",
         trusted: true,
         name: {
-            eng: "clownfish"
+            en: "clownfish",
+            fr: "poisson-clown du pacific",
+            pt: "peixe-palhaço-percula"
         },
         difficulty: 0,
         attributes: [
@@ -385,7 +401,9 @@ export const paradiseFish = [
         type: "rare",
         trusted: true,
         name: {
-            eng: "green humphead parrotfish"
+            en: "green humphead parrotfish",
+            fr: "poisson-perroquet à bosse",
+            pt: "peixe-papagaio"
         },
         difficulty: 1,
         attributes: [
@@ -450,7 +468,9 @@ export const paradiseFish = [
         id: "010",
         type: "rare",
         name: {
-            eng: "white-tuna"
+            en: "white-tuna",
+            fr: "thon à dents de chien",
+            pt: "atum branco"
         },
         difficulty: 1,
         attributes: [
@@ -495,7 +515,9 @@ export const paradiseFish = [
         id: "011",
         type: "epic",
         name: {
-            eng: "pelagic stingray"
+            en: "pelagic stingray",
+            fr: "pastenague violette",
+            pt: "arraia pelàgica"
         },
         difficulty: 1,
         attributes: [
@@ -549,7 +571,9 @@ export const paradiseFish = [
         type: "epic",
         trusted: true,
         name: {
-            eng: "pacific footballfish"
+            en: "pacific footballfish",
+            fr: "poisson-football",
+            pt: "peixe-futebol de pacifico"
         },
         difficulty: 1,
         attributes: [
@@ -601,7 +625,9 @@ export const paradiseFish = [
         type: "monster",
         trusted: true,
         name: {
-            eng: "shredder"
+            en: "shredder",
+            fr: "shredder",
+            pt: "shredder"
         },
         difficulty: 2,
         attributes: [

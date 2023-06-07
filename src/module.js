@@ -1,13 +1,13 @@
 
 
-export function createList(fish) {
+export function createList(fish, language) {
     if (!document.querySelector(`#list-${fish.map}`)) {
 
 
         const listContainer = document.createElement("div");
         listContainer.setAttribute("class", "list-container hidden-list");
         listContainer.setAttribute("id", `list-${fish.map}`);
-        document.querySelector(".csidebar-list").appendChild(listContainer);
+        document.querySelector("#fish-list").appendChild(listContainer);
 
         const listTitle = document.createElement("div");
         listTitle.setAttribute("class", "is-flex my-2 is-align-items-center list-title");
@@ -67,12 +67,13 @@ export function createList(fish) {
     figure.appendChild(img);
     const p = document.createElement("p");
     p.setAttribute("class", "is-size-6 fishp");
-    p.innerHTML = fish.name.eng;
+    p.innerHTML = fish.name[language] ? fish.name[language] : fish.name.en;
     item.appendChild(p)
     
 
 
 
-    document.querySelector(`#list-${fish.map} .inner-list`).appendChild(item)
+    document.querySelector(`#list-${fish.map} .inner-list`).appendChild(item);
+
 
 }

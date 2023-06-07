@@ -3,7 +3,8 @@ export const australiaFish = [
         id: "40",
         type: "common",
         name: {
-            eng: "Black Bream"
+            en: "Black Bream",
+            fr: "daurade noire"
         },
         difficulty: 0,
         attributes: [
@@ -54,7 +55,8 @@ export const australiaFish = [
         id: "41",
         type: "common",
         name: {
-            eng: "Dusky flathead"
+            en: "dusky flathead",
+            fr: "poisson-crocodile"
         },
         difficulty: 0,
         attributes: [
@@ -101,7 +103,8 @@ export const australiaFish = [
         id: "42",
         type: "common",
         name: {
-            eng: "Red Emperor Snapper"
+            en: "Red Emperor Snapper",
+            fr: "vivaneau bourgeois"
         },
         difficulty: 0,
         attributes: [
@@ -144,7 +147,8 @@ export const australiaFish = [
         id: "43",
         type: "common",
         name: {
-            eng: "Shortfin Mako Shark"
+            en: "Shortfin Mako Shark",
+            fr: "requin mako"
         },
         difficulty: 1,
         attributes: [
@@ -188,7 +192,8 @@ export const australiaFish = [
         id: "44",
         type: "common",
         name: {
-            eng: "Carpet Shark"
+            en: "Carpet Shark",
+            fr: "requin-tapis barbu"
         },
         attributes: [
             { shadow: [2] },
@@ -234,7 +239,8 @@ export const australiaFish = [
         id: "45",
         type: "common",
         name: {
-            eng: "port Jackson Shark"
+            en: "port Jackson Shark",
+            fr: "requin de port-jackson"
         },
         attributes: [
             { shadow: [] },
@@ -277,7 +283,8 @@ export const australiaFish = [
         id: "46",
         type: "common",
         name: {
-            eng: "Spanish Mackerel"
+            en: "Spanish Mackerel",
+            fr: "thazard rayé"
         },
         difficulty: 0,
         attributes: [
@@ -328,7 +335,8 @@ export const australiaFish = [
         id: "47",
         type: "common",
         name: {
-            eng: "Albacore"
+            en: "Albacore",
+            fr: "thon blanc"
         },
         difficulty: 0,
         attributes: [
@@ -380,7 +388,8 @@ export const australiaFish = [
         id: "48",
         type: "common",
         name: {
-            eng: "Barramundi"
+            en: "Barramundi",
+            fr: "barramundi"
         },
         difficulty: 0,
         attributes: [
@@ -428,7 +437,8 @@ export const australiaFish = [
         id: "49",
         type: "common",
         name: {
-            eng: "Unicorn Leatherjacket"
+            en: "Unicorn Leatherjacket",
+            fr: "bourse loulou"
         },
         difficulty: 0,
         attributes: [
@@ -472,7 +482,8 @@ export const australiaFish = [
         id: "410",
         type: "common",
         name: {
-            eng: "Tailor"
+            en: "Tailor",
+            fr: "tassergal"
         },
         difficulty: 0,
         attributes: [
@@ -519,7 +530,8 @@ export const australiaFish = [
         id: "411",
         type: "common",
         name: {
-            eng: "Leafy Seadragon"
+            en: "Leafy Seadragon",
+            fr: "dragon de mer feuillu"
         },
         difficulty: 0,
         attributes: [
@@ -562,7 +574,8 @@ export const australiaFish = [
         id: "412",
         type: "common",
         name: {
-            eng: "Rock Flagtail"
+            en: "Rock Flagtail",
+            fr: "doule de roche"
         },
         difficulty: 0,
         attributes: [
@@ -614,7 +627,8 @@ export const australiaFish = [
         id: "413",
         type: "common",
         name: {
-            eng: "Black-Saddler Coral Grouper"
+            en: "Black-Saddler Coral Grouper",
+            fr: "mérou corallien à selle noire"
         },
         difficulty: 0,
         attributes: [
@@ -661,7 +675,8 @@ export const australiaFish = [
         id: "414",
         type: "common",
         name: {
-            eng: "Common Stargazer"
+            en: "Common Stargazer",
+            fr: "stragazer"
         },
         difficulty: 0,
         attributes: [
@@ -716,7 +731,8 @@ export const australiaFish = [
         id: "415",
         type: "common",
         name: {
-            eng: "Skipjack Tuna"
+            en: "Skipjack Tuna",
+            fr: "bonite à ventre rayé"
         },
         difficulty: 0,
         attributes: [
@@ -765,7 +781,8 @@ export const australiaFish = [
         id: "416",
         type: "common",
         name: {
-            eng: "Fingermark"
+            en: "Fingermark",
+            fr: "vivaneau ziebelo"
         },
         difficulty: 0,
         attributes: [
@@ -808,7 +825,8 @@ export const australiaFish = [
         id: "417",
         type: "common",
         name: {
-            eng: "Coral Trout"
+            en: "Coral Trout",
+            fr: "saumonée léopard"
         },
         difficulty: 0,
         attributes: [
@@ -851,7 +869,8 @@ export const australiaFish = [
         id: "418",
         type: "common",
         name: {
-            eng: "John Dory"
+            en: "John Dory",
+            fr: "saint pierre"
         },
         difficulty: 0,
         attributes: [
@@ -911,7 +930,8 @@ export const australiaFish = [
         id: "419",
         type: "common",
         name: {
-            eng: "Luderick"
+            en: "Luderick",
+            fr: "parore"
         },
         difficulty: 0,
         attributes: [
@@ -954,7 +974,8 @@ export const australiaFish = [
         id: "420",
         type: "common",
         name: {
-            eng: "Mangrove Jack"
+            en: "Mangrove Jack",
+            fr: "vivaneau des mangroves"
         },
         difficulty: 0,
         attributes: [
@@ -1006,7 +1027,8 @@ export const australiaFish = [
         id: "421",
         type: "common",
         name: {
-            eng: "Golden Trevally"
+            en: "Golden Trevally",
+            fr: "carangue royale"
         },
         difficulty: 0,
         attributes: [
@@ -1065,7 +1087,8 @@ export const australiaFish = [
         id: "422",
         type: "rare",
         name: {
-            eng: "Queensland Grouper"
+            en: "Queensland Grouper",
+            fr: "mérou géant"
         },
         attributes: [
             { shadow: [3,4] },
@@ -1116,7 +1139,8 @@ export const australiaFish = [
         id: "423",
         type: "rare",
         name: {
-            eng: "Smooth Oreo Dory"
+            en: "Smooth Oreo Dory",
+            fr: "lompe"
         },
         attributes: [
             { shadow: [1,2] },
@@ -1163,7 +1187,8 @@ export const australiaFish = [
         id: "424",
         type: "rare",
         name: {
-            eng: "Swordfish"
+            en: "Swordfish",
+            fr: "espadon"
         },
         difficulty: 2,
         attributes: [
@@ -1211,7 +1236,8 @@ export const australiaFish = [
         type: "common",
         inprogress: true,
         name: {
-            eng: "N/A"
+            en: "N/A",
+            fr: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -1250,7 +1276,8 @@ export const australiaFish = [
         id: "426",
         type: "rare",
         name: {
-            eng: "Giant Trevally"
+            en: "Giant Trevally",
+            fr: "carangue à grosse tête"
         },
         attributes: [
             { shadow: [3] },
@@ -1294,7 +1321,8 @@ export const australiaFish = [
         type: "common",
         inprogress: true,
         name: {
-            eng: "N/A"
+            en: "N/A",
+            fr: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -1334,7 +1362,8 @@ export const australiaFish = [
         type: "common",
         inprogress: true,
         name: {
-            eng: "N/A"
+            en: "N/A",
+            fr: "N/A"
         },
         attributes: [
             { shadow: [] },
@@ -1373,7 +1402,8 @@ export const australiaFish = [
         id: "429",
         type: "epic",
         name: {
-            eng: "Hoodwinker Sunfish"
+            en: "Hoodwinker Sunfish",
+            fr: "môle",
         },
         attributes: [
             { shadow: [] },
