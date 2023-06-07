@@ -23,7 +23,7 @@ function updateQueryParam(key, value) {
 }
 
 
-function getCookieValue(name) {
+function getCookieValue(name) {    
     const cookies = document.cookie.split(';');
     for (let i = 0; i < cookies.length; i++) {
       const cookie = cookies[i].trim();
@@ -221,15 +221,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    function setLang(lang) {
-
-    }
-
     fishes.forEach(fish => {    
         createList(fish, lang);
     })
 
-    function bindEventListenerToItem() {
+    function bindEventListenerToItem(lang) {
         Array.from(document.querySelectorAll(".item")).forEach(item => {
             item.addEventListener("click", () => {
                 currentId = item.getAttribute("data-id")
@@ -241,22 +237,19 @@ document.addEventListener('DOMContentLoaded', () => {
     bindEventListenerToItem()
 
     Array.from(document.querySelectorAll("[data-lang")).forEach(langBtn => {
-        let prefLang = getCookieValue("language") || "en"
-        if(langBtn.getAttribute("data-lang") == prefLang) {
-            langBtn.classList.add("selected-language")
-        }
-        getCookieValue("language")
-        langBtn.addEventListener("click", () => {
-            const lang = langBtn.getAttribute("data-lang")
-            Array.from(document.querySelectorAll("[data-lang")).forEach(elem => elem.classList.remove("selected-language"));
-            langBtn.classList.add("selected-language")
-            loadFish(currentId, lang)
-            document.querySelector("#fish-list").innerHTML = "";
-            fishes.forEach(fish => {        
-                createList(fish, lang)
-            });
-            document.cookie = "language=" + lang + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";   
-            bindEventListenerToItem();        
+        langBtn.addEventListener("click", () => {          
+            Array.from(document.querySelectorAll("[data-lang")).forEach(elem => {
+                elem.classList.remove("selected-language");
+                langBtn.classList.add("selected-language")
+            })
+            let prefLang = document.querySelector(".selected-language").getAttribute("data-lang");
+            document.cookie = "language=" + prefLang + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";  
+            document.querySelector("#fish-list").innerHTML = ""; 
+            fishes.forEach(fish => {                            
+                createList(fish, prefLang)
+            });         
+            bindEventListenerToItem(prefLang);             
+            loadFish(currentId, prefLang)    
         })
     })
 
@@ -300,8 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     svg.setAttribute("data-current-svg", attribute[attributeName].includes(index) || false)
                 })
             }
-        })
-
+        })        
         
         document.getElementById("fishName").innerHTML = fish.name[lang] ? fish.name[lang] : fish.name.en;
         document.getElementById("fishType").innerHTML = fish.type;

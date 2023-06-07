@@ -4,7 +4,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "barracuda",
-            fr: "barracuda"
+            fr: "barracuda",
+            pt: "grande barracuda"
         },
         difficulty: 0,
         attributes: [
@@ -52,7 +53,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "roosterfish",
-            fr: "poisson coq"
+            fr: "poisson coq",
+            pt: "peixe galo"
         },
         difficulty: 0,
         attributes: [
@@ -100,7 +102,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "dorado",
-            fr: "dorade coryphène"
+            fr: "dorade coryphène",
+            pt: "dourado-do-mar"
         },
         difficulty: 0,
         attributes: [
@@ -148,7 +151,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "pompano",
-            fr: "pompaneau sole"
+            fr: "pompaneau sole",
+            pt: "pampo verdadeiro"
         },
         difficulty: 0,
         attributes: [
@@ -196,7 +200,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "wahoo",
-            fr: "thazard noir"
+            fr: "thazard noir",
+            pt: "cavala da india"
         },
         difficulty: 1,
         attributes: [
@@ -244,7 +249,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "tripletail",
-            fr: "croupia roche"
+            fr: "croupia roche",
+            pt: "prejereba"
         },
         difficulty: 0,
         attributes: [
@@ -292,7 +298,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "tarpon",
-            fr: "tarpon de l'atlantique"
+            fr: "tarpon de l'atlantique",
+            pt: "tarpão"
         },
         difficulty: 1,
         attributes: [
@@ -340,7 +347,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "yellowfin tuna",
-            fr: "thon jaune"
+            fr: "thon jaune",
+            pt: "albacora"
         },
         difficulty: 0,
         attributes: [
@@ -392,7 +400,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "sierra mackerel",
-            fr: "thazard sierra"
+            fr: "thazard sierra",
+            pt: "serra do pacifico"
         },
         difficulty: 0,
         attributes: [
@@ -444,7 +453,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "pacific sailfish",
-            fr: "voilier de l'indo-pacifique"
+            fr: "voilier de l'indo-pacifique",
+            pt: "agulhão vela"
         },
         difficulty: 1,
         attributes: [
@@ -500,7 +510,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "jack crevalle",
-            fr: "carangue crevalle"
+            fr: "carangue crevalle",
+            pt: "charo-largo"
         },
         difficulty: 0,
         attributes: [
@@ -552,7 +563,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "cubera snapper",
-            fr: "vivaneau cubéra"
+            fr: "vivaneau cubéra",
+            pt: "caranha"
         },
         difficulty: 0,
         attributes: [
@@ -604,7 +616,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "broomtail grouper",
-            fr: "mérou genêt-queue"
+            fr: "mérou genêt-queue",
+            pt: "garoupa de mangue"
         },
         difficulty: 0,
         attributes: [
@@ -664,7 +677,8 @@ export const crFish = [
         type: "common",
         name: {
             en: "snook",
-            fr: "brochet de mer"
+            fr: "brochet de mer",
+            pt: "robalo branco"
         },
         difficulty: 0,
         attributes: [
@@ -716,7 +730,8 @@ export const crFish = [
         type: "rare",
         name: {
             en: "blue marlin",
-            fr: "makaire bleu"
+            fr: "makaire bleu",
+            pt: "marlim azul"
         },
         difficulty: 2,
         attributes: [
@@ -760,7 +775,8 @@ export const crFish = [
         type: "rare",
         name: {
             en: "striped marlin",
-            fr: "marlin rayé"
+            fr: "marlin rayé",
+            pt: "marlim listrado"
         },
         difficulty: 2,
         attributes: [
@@ -804,7 +820,8 @@ export const crFish = [
         type: "rare",
         name: {
             en: "nurse shark",
-            fr: "requin nourrice atlantique"
+            fr: "requin nourrice atlantique",
+            pt: "tubarão enfermeiro"
         },
         difficulty: 1,
         attributes: [
@@ -852,7 +869,8 @@ export const crFish = [
         type: "rare",
         name: {
             en: "black marlin",
-            fr: "makaire noir"
+            fr: "makaire noir",
+            pt: "marlim preto"
         },
         difficulty: 2,
         attributes: [
@@ -900,7 +918,8 @@ export const crFish = [
         type: "epic",
         name: {
             en: "bull shark",
-            fr: "requin-bouledogue"
+            fr: "requin-bouledogue",
+            pt: "tubarão cabeça chata"
         },
         difficulty: 2,
         attributes: [
@@ -948,7 +967,8 @@ export const crFish = [
         type: "epic",
         name: {
             en: "hammerhead shark",
-            fr: "requin-marteau halicorne"
+            fr: "requin-marteau halicorne",
+            pt: "tubarão-martelo- recortado"
         },
         difficulty: 2,
         attributes: [
@@ -992,7 +1012,8 @@ export const crFish = [
         type: "epic",
         name: {
             en: "whale shark",
-            fr: "requin-baleine"
+            fr: "requin-baleine",
+            pt: "tubarão-baleia"
         },
         difficulty: 2,
         attributes: [
@@ -1036,7 +1057,8 @@ export const crFish = [
         type: "epic",
         name: {
             en: "whitetip shark",
-            fr: "requin longimane"
+            fr: "requin longimane",
+            pt: "galha branca oceânico"
         },
         difficulty: 2,
         attributes: [
@@ -1080,7 +1102,8 @@ export const crFish = [
         type: "monster",
         name: {
             en: "don pedro",
-            fr: "don pedro"
+            fr: "don pedro",
+            pt: "don pedro"
         },
         difficulty: 2,
         attributes: [

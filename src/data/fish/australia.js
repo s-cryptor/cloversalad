@@ -4,7 +4,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Black Bream",
-            fr: "daurade noire"
+            fr: "daurade noire",
+            pt: "sargo-preto"
         },
         difficulty: 0,
         attributes: [
@@ -56,7 +57,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "dusky flathead",
-            fr: "poisson-crocodile"
+            fr: "poisson-crocodile",
+            pt: "flathead"
         },
         difficulty: 0,
         attributes: [
@@ -104,7 +106,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Red Emperor Snapper",
-            fr: "vivaneau bourgeois"
+            fr: "vivaneau bourgeois",
+            pt: "jenahak"
         },
         difficulty: 0,
         attributes: [
@@ -148,7 +151,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Shortfin Mako Shark",
-            fr: "requin mako"
+            fr: "requin mako",
+            pt: "tubarão-mako"
         },
         difficulty: 1,
         attributes: [
@@ -193,7 +197,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Carpet Shark",
-            fr: "requin-tapis barbu"
+            fr: "requin-tapis barbu",
+            pt: "tubarão tapete"
         },
         attributes: [
             { shadow: [2] },
@@ -240,7 +245,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "port Jackson Shark",
-            fr: "requin de port-jackson"
+            fr: "requin de port-jackson",
+            pt: "tubarão de port jackson"
         },
         attributes: [
             { shadow: [] },
@@ -284,7 +290,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Spanish Mackerel",
-            fr: "thazard rayé"
+            fr: "thazard rayé",
+            pt: "cavala espanhola de barreiras estreitas"
         },
         difficulty: 0,
         attributes: [
@@ -336,7 +343,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Albacore",
-            fr: "thon blanc"
+            fr: "thon blanc",
+            pt: "albacora"
         },
         difficulty: 0,
         attributes: [
@@ -389,7 +397,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Barramundi",
-            fr: "barramundi"
+            fr: "barramundi",
+            pt: "perca-gigante"
         },
         difficulty: 0,
         attributes: [
@@ -438,7 +447,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Unicorn Leatherjacket",
-            fr: "bourse loulou"
+            fr: "bourse loulou",
+            pt: "porco liso"
         },
         difficulty: 0,
         attributes: [
@@ -483,7 +493,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Tailor",
-            fr: "tassergal"
+            fr: "tassergal",
+            pt: "enchova"
         },
         difficulty: 0,
         attributes: [
@@ -531,7 +542,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Leafy Seadragon",
-            fr: "dragon de mer feuillu"
+            fr: "dragon de mer feuillu",
+            pt: "dragão marinho folhado"
         },
         difficulty: 0,
         attributes: [
@@ -575,7 +587,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Rock Flagtail",
-            fr: "doule de roche"
+            fr: "doule de roche",
+            pt: "truta de montanha"
         },
         difficulty: 0,
         attributes: [
@@ -628,7 +641,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Black-Saddler Coral Grouper",
-            fr: "mérou corallien à selle noire"
+            fr: "mérou corallien à selle noire",
+            pt: "garoupa de sela negra"
         },
         difficulty: 0,
         attributes: [
@@ -676,7 +690,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Common Stargazer",
-            fr: "stragazer"
+            fr: "stragazer",
+            pt: "stragazer"
         },
         difficulty: 0,
         attributes: [
@@ -732,7 +747,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Skipjack Tuna",
-            fr: "bonite à ventre rayé"
+            fr: "bonite à ventre rayé",
+            pt: "bonito"
         },
         difficulty: 0,
         attributes: [
@@ -782,7 +798,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Fingermark",
-            fr: "vivaneau ziebelo"
+            fr: "vivaneau ziebelo",
+            pt: "pargo de joão"
         },
         difficulty: 0,
         attributes: [
@@ -826,7 +843,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Coral Trout",
-            fr: "saumonée léopard"
+            fr: "saumonée léopard",
+            pt: "garoupa coral leopardo"
         },
         difficulty: 0,
         attributes: [
@@ -870,7 +888,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "John Dory",
-            fr: "saint pierre"
+            fr: "saint pierre",
+            pt: "peixe galo"
         },
         difficulty: 0,
         attributes: [
@@ -931,7 +950,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Luderick",
-            fr: "parore"
+            fr: "parore",
+            pt: "perca preta"
         },
         difficulty: 0,
         attributes: [
@@ -975,7 +995,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Mangrove Jack",
-            fr: "vivaneau des mangroves"
+            fr: "vivaneau des mangroves",
+            pt: "pargo vermelho do mangue"
         },
         difficulty: 0,
         attributes: [
@@ -1028,7 +1049,8 @@ export const australiaFish = [
         type: "common",
         name: {
             en: "Golden Trevally",
-            fr: "carangue royale"
+            fr: "carangue royale",
+            pt: "xaréu dourado"
         },
         difficulty: 0,
         attributes: [
@@ -1088,7 +1110,8 @@ export const australiaFish = [
         type: "rare",
         name: {
             en: "Queensland Grouper",
-            fr: "mérou géant"
+            fr: "mérou géant",
+            pt: "garoupa gigante"
         },
         attributes: [
             { shadow: [3,4] },
@@ -1140,7 +1163,8 @@ export const australiaFish = [
         type: "rare",
         name: {
             en: "Smooth Oreo Dory",
-            fr: "lompe"
+            fr: "lompe",
+            pt: "oreo dory"
         },
         attributes: [
             { shadow: [1,2] },
@@ -1188,7 +1212,8 @@ export const australiaFish = [
         type: "rare",
         name: {
             en: "Swordfish",
-            fr: "espadon"
+            fr: "espadon",
+            pt: "espadarte"
         },
         difficulty: 2,
         attributes: [
@@ -1233,42 +1258,45 @@ export const australiaFish = [
     },
     {
         id: "425",
-        type: "common",
-        inprogress: true,
+        type: "rare",
         name: {
-            en: "N/A",
-            fr: "N/A"
+            en: "spotted handfish",
+            fr: "poisson main tacheté",
+            pt: "peixe mão malhado"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [1,2] },
+            { rods: [1,2,3,5] },
+            { moment: [1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 0.2,
+            max: 0.6
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 0.44,
+            max: 1.32
         },
         map: "australia",
         positions: [
-
+            {
+                x:85,
+                y:45
+            }
         ],
         positionNote: ""
     },
@@ -1277,7 +1305,8 @@ export const australiaFish = [
         type: "rare",
         name: {
             en: "Giant Trevally",
-            fr: "carangue à grosse tête"
+            fr: "carangue à grosse tête",
+            pt: "xaréu gigante"
         },
         attributes: [
             { shadow: [3] },
@@ -1404,6 +1433,7 @@ export const australiaFish = [
         name: {
             en: "Hoodwinker Sunfish",
             fr: "môle",
+            pt: "peixe lua"
         },
         attributes: [
             { shadow: [] },

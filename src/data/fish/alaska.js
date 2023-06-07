@@ -5,7 +5,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "arctic char",
-            fr: "omble chevalier"
+            fr: "omble chevalier",
+            pt: "truta de àrtico"
         },
         difficulty: 0,
         attributes: [
@@ -49,7 +50,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "atka mackerel",
-            fr: "maquereau atka"
+            fr: "maquereau atka",
+            pt: "cavala atka"
         },
         difficulty: 0,
         attributes: [
@@ -105,7 +107,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "yellow irish lord",
-            fr: "seigneur irlandais jaune"
+            fr: "seigneur irlandais jaune",
+            pt: "lord irlandês amarelo"
         },
         difficulty: 0,
         attributes: [
@@ -161,7 +164,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "lancetfish",
-            fr: "cavalo féroce"
+            fr: "cavalo féroce",
+            pt: "lirio ferro"
         },
         difficulty: 0,
         attributes: [
@@ -217,7 +221,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "steelhead",
-            fr: "truite arc-en-ciel"
+            fr: "truite arc-en-ciel",
+            pt: "truita arco-iris"
         },
         difficulty: 0,
         attributes: [
@@ -273,7 +278,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "silver salmon",
-            fr: "saumon coho"
+            fr: "saumon coho",
+            pt: "salmão prateado"
         },
         difficulty: 0,
         attributes: [
@@ -329,7 +335,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "rougheye rockfish",
-            fr: "sébaste à oeil épineux"
+            fr: "sébaste à oeil épineux",
+            pt: "peixe-rock rougheye"
         },
         difficulty: 0,
         attributes: [
@@ -385,7 +392,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "pacific herring",
-            fr: "hareng du pacifique"
+            fr: "hareng du pacifique",
+            pt: "arenque de pacifico"
         },
         difficulty: 0,
         attributes: [
@@ -441,7 +449,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "sockeye salmon",
-            fr: "saumon rouge"
+            fr: "saumon rouge",
+            pt: "salmão-vermelho"
         },
         difficulty: 0,
         attributes: [
@@ -497,7 +506,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "dolly varden",
-            fr: "dolly varden"
+            fr: "dolly varden",
+            pt: "truta dolly varden"
         },
         difficulty: 0,
         attributes: [
@@ -553,7 +563,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "coalfish",
-            fr: "charbonnier"
+            fr: "charbonnier",
+            pt: "peixe-carvão de pacifico"
         },
         difficulty: 0,
         attributes: [
@@ -609,7 +620,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "chum salmon",
-            fr: "saumon chien"
+            fr: "saumon chien",
+            pt: "salmão cão"
         },
         difficulty: 0,
         attributes: [
@@ -665,7 +677,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "capelin",
-            fr: "capelan"
+            fr: "capelan",
+            pt: "capelim"
         },
         difficulty: 0,
         attributes: [
@@ -721,7 +734,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "burbot",
-            fr: "lotte"
+            fr: "lotte",
+            pt: "burbot"
         },
         difficulty: 0,
         attributes: [
@@ -777,7 +791,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "bigmouth sculpin",
-            fr: "chabot à grande-bouche"
+            fr: "chabot à grande-bouche",
+            pt: "escultor de bigmouth"
         },
         difficulty: 0,
         attributes: [
@@ -833,7 +848,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "arctic greyling",
-            fr: "ombre arctique"
+            fr: "ombre arctique",
+            pt: "grayling àrtico"
         },
         difficulty: 0,
         attributes: [
@@ -889,7 +905,8 @@ export const alaskaFish = [
         type: "common",
         name: {
             en: "humpback salmon",
-            fr: "saumon rose à bosse"
+            fr: "saumon rose à bosse",
+            pt: "salmão rosado"
         },
         difficulty: 0,
         attributes: [
@@ -945,7 +962,8 @@ export const alaskaFish = [
         type: "rare",
         name: {
             en: "halibut",
-            fr: "flétan du pacifique"
+            fr: "flétan du pacifique",
+            pt: "halibute"
         },
         difficulty: 1,
         attributes: [
@@ -989,7 +1007,8 @@ export const alaskaFish = [
         type: "rare",
         name: {
             en: "blue lingcod",
-            fr: "morue-lingue bleue"
+            fr: "morue-lingue bleue",
+            pt: "bacalhau ling"
         },
         difficulty: 1,
         attributes: [
@@ -1045,7 +1064,8 @@ export const alaskaFish = [
         type: "rare",
         name: {
             en: "spiny skate",
-            fr: "raie blanche du pacifique"
+            fr: "raie blanche du pacifique",
+            pt: "arraia branco de pacifico"
         },
         difficulty: 1,
         attributes: [
@@ -1117,7 +1137,8 @@ export const alaskaFish = [
         type: "rare",
         name: {
             en: "wolf eel",
-            fr: "poisson loup à ocelles"
+            fr: "poisson loup à ocelles",
+            pt: "enguia-lobo"
         },
         difficulty: 1,
         attributes: [
@@ -1169,7 +1190,8 @@ export const alaskaFish = [
         type: "epic",
         name: {
             en: "king salmon",
-            fr: "saumon royal"
+            fr: "saumon royal",
+            pt: "salmão-rei"
         },
         difficulty: 1,
         attributes: [
@@ -1217,7 +1239,8 @@ export const alaskaFish = [
         type: "epic",
         name: {
             en: "salmon shark",
-            fr: "requin saumon"
+            fr: "requin saumon",
+            pt: "tubarão-salmão"
         },
         difficulty: 1,
         attributes: [
@@ -1265,7 +1288,8 @@ export const alaskaFish = [
         type: "epic",
         name: {
             en: "pacific sleeper shark",
-            fr: "requin dormeur du pacifique"
+            fr: "requin dormeur du pacifique",
+            pt: "tubarão-dormedor de pacifico"
         },
         difficulty: 1,
         attributes: [
@@ -1321,7 +1345,8 @@ export const alaskaFish = [
         type: "epic",
         name: {
             en: "sunfish",
-            fr: "môle"
+            fr: "môle",
+            pt: "peixe-luna"
         },
         difficulty: 1,
         attributes: [
@@ -1365,7 +1390,8 @@ export const alaskaFish = [
         type: "monster",
         name: {
             en: "kraken",
-            fr: "kraken"
+            fr: "kraken",
+            pt: "kraken"
         },
         difficulty: 2,
         attributes: [
