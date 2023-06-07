@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     /**SWIPE */
+
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
 
@@ -230,6 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
             item.addEventListener("click", () => {
                 currentId = item.getAttribute("data-id")
                 loadFish(currentId, window.lang)
+                console.log("tamer");
+                
+                triggerSwipeRightEvent()
             })
         })
     }

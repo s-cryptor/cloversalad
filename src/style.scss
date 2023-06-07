@@ -775,8 +775,9 @@ body.c{
 }
 .app-name{
     color: var(--yellow);
-    font-size:1.3rem;
+    font-size: 1.5rem;
     font-weight: 300;
+    line-height: 1.3rem;
 }
 .c .cwhite-text{
     color:var(--text);
@@ -933,10 +934,12 @@ section.hero{
     width: 100%;
 }
 .csidebar-head{
+    display:flex;
+    align-items:center;
     background-color: var(--darkMax);
     padding: 10px;
-    height: 34px;
-    box-sizing: content-box;
+    box-sizing:border-box;
+    height: 5rem;
     border-bottom:1px solid var(--text);
 }
 .csidebar-list{
