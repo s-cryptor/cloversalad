@@ -866,6 +866,10 @@ export const glFish = [
             {
                 x: 40,
                 y: 45
+            },
+            {
+                x: 75,
+                y: 70
             }
         ],
         positionNote: ""
