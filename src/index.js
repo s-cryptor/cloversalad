@@ -35,7 +35,7 @@ function getCookieValue(name) {
   }
   
   
-let lang = getCookieValue("language") ? getCookieValue("language") : "en";
+window.lang = getCookieValue("language") ? getCookieValue("language") : "en";
 
 
 function findMatchingId(originalId, tolerance) {
@@ -93,7 +93,7 @@ function findMatchingId(originalId, tolerance) {
             id: fish.id,
             neighborPositions: neighborPositions,
             name: fish.name,
-            originalPosition: fish.originalPosition // Ajouter originalPosition au résultat
+            originalPosition: fish.originalPosition
         };
     });
 }
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(document.querySelectorAll("[data-unit")).forEach(element => {
             element.setAttribute("data-unit", unit);
         })
-        loadFish(currentId, lang);
+        loadFish(currentId, window.lang);
     })
 
     // Functions to open and close a modal
@@ -222,38 +222,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     fishes.forEach(fish => {    
-        createList(fish, lang);
+        createList(fish, window.lang);
     })
 
-    function bindEventListenerToItem(lang) {
+    function bindEventListenerToItem() {
         Array.from(document.querySelectorAll(".item")).forEach(item => {
             item.addEventListener("click", () => {
                 currentId = item.getAttribute("data-id")
-                loadFish(currentId, lang)
+                loadFish(currentId, window.lang)
             })
         })
     }
 
-    bindEventListenerToItem()
+    bindEventListenerToItem();
+
+    Array.from(document.querySelectorAll("[data-lang")).forEach(elem => {
+        elem.classList.remove("selected-language");
+    });
+    
+    document.querySelector("[data-lang='" + window.lang + "'").classList.add("selected-language")
 
     Array.from(document.querySelectorAll("[data-lang")).forEach(langBtn => {
-        langBtn.addEventListener("click", () => {          
+        langBtn.addEventListener("click", () => {     
+            window.lang = langBtn.getAttribute("data-lang")                 
             Array.from(document.querySelectorAll("[data-lang")).forEach(elem => {
                 elem.classList.remove("selected-language");
                 langBtn.classList.add("selected-language")
             })
-            let prefLang = document.querySelector(".selected-language").getAttribute("data-lang");
-            document.cookie = "language=" + prefLang + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";  
+            document.cookie = "language=" + window.lang + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";  
             document.querySelector("#fish-list").innerHTML = ""; 
             fishes.forEach(fish => {                            
-                createList(fish, prefLang)
+                createList(fish, window.lang)
             });         
-            bindEventListenerToItem(prefLang);             
-            loadFish(currentId, prefLang)    
+            bindEventListenerToItem(window.lang);             
+            loadFish(currentId, window.lang)    
         })
     })
 
-    function loadFish(id, lang) {
+    function loadFish(id) {
 
         // TODO NEIGHBOR
         console.log(findMatchingId(id, 10));
@@ -295,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })        
         
-        document.getElementById("fishName").innerHTML = fish.name[lang] ? fish.name[lang] : fish.name.en;
+        document.getElementById("fishName").innerHTML = fish.name[window.lang] ? fish.name[window.lang] : fish.name.en;
         document.getElementById("fishType").innerHTML = fish.type;
         document.getElementById("map").setAttribute("src", `./images/map-${fish.map}.jpg`);
         document.getElementById("mapName").innerHTML = fish.map;
@@ -398,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    loadFish(currentId, lang)
+    loadFish(currentId, window.lang)
 
 
     document.querySelectorAll(".months-container > div")[new Date().getMonth()].setAttribute("data-current", "true");
