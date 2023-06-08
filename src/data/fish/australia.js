@@ -285,9 +285,13 @@ export const australiaFish = [
             {
                 x:75,
                 y:20
+            },
+            {
+                x: 10,
+                y: 40
             }
         ],
-        positionNote: "Not sure yet if it has a shadow and if so, what size it is. Please help<br>Also need to confirm the spot (only caught one here)"
+        positionNote: ""
     },
     {
         id: "46",
