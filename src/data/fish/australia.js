@@ -1355,42 +1355,46 @@ export const australiaFish = [
     },
     {
         id: "427",
-        type: "common",
-        inprogress: true,
+        type: "epic",
         name: {
-            en: "N/A",
-            fr: "N/A"
+            en: "tiger shark",
+            fr: "requin tigre",
+            pt: "tubarão tigre"
         },
+        difficulty:2,
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2,3] },
+            { rods: [2,3,5] },
+            { moment: [1] }
         ],
         seasons: [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 300,
+            max: 807
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 661.39,
+            max: 1779.13
         },
         map: "australia",
         positions: [
-
+            {
+                x: 40,
+                y: 95
+            }
         ],
         positionNote: ""
     },

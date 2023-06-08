@@ -7,6 +7,32 @@ import { createList } from './module';
 
 import { fishes } from './data/fish//allfish.js';
 
+const url = "https://docs.google.com/spreadsheets/d/10MTDEWxNdkIUZsva4hp5IqtTcYU7JmOGRksyBfwIpN0/export?format=json";
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    // Les données sont disponibles ici sous forme de JSON
+    console.log(data);
+
+    // Traitez les données selon vos besoins
+    const sheetData = data[0].data;
+    const headers = sheetData[0].rowData[0].values;
+    const rows = sheetData[0].rowData.slice(1);
+
+    const formattedData = rows.map(row => {
+      const rowData = row.values.map((value, index) => {
+        const header = headers[index].formattedValue;
+        return { [header]: value.formattedValue };
+      });
+      return Object.assign({}, ...rowData);
+    });
+
+    console.log(formattedData);
+  })
+  .catch(error => {
+    console.error('Erreur lors de la récupération des données :', error);
+  });
 
 
 function trackDataIdClicks(dataIdValue) {
