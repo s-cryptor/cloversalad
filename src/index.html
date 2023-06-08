@@ -585,6 +585,19 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/stein-js-client"></script>
+
+<script>
+  
+    const store = new SteinStore(
+      "https://api.steinhq.com/v1/storages/64823a5feced9b09e9d4aaf5"
+    );
+  
+    store.read("c4rna", { limit: 1, offset: 2 }).then(data => {
+      console.log(data);
+    });
+</script>
+    
   </div>
 
 </body>
