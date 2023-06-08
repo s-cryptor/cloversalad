@@ -7,6 +7,10 @@ import { createList } from './module';
 
 import { fishes } from './data/fish//allfish.js';
 
+import { loadC4rn } from './c4rn.js';
+
+
+
 
 
 function trackDataIdClicks(dataIdValue) {
@@ -14,12 +18,10 @@ function trackDataIdClicks(dataIdValue) {
 }
 
 
-function updateQueryParam(key, value) {
-    var url = new URL(window.location.href);
-    url.searchParams.set(key, value);
-
-    var newUrl = url.href;
-    window.history.replaceState({ path: newUrl }, '', newUrl);
+function getQueryParamValue(key) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const param = urlParams.get(key);
+    return param;
 }
 
 
@@ -230,9 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(document.querySelectorAll(".item")).forEach(item => {
             item.addEventListener("click", () => {
                 currentId = item.getAttribute("data-id")
-                loadFish(currentId, window.lang)
-                console.log("tamer");
-                
+                loadFish(currentId, window.lang)                
                 triggerSwipeRightEvent()
             })
         })
@@ -404,6 +404,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector("html").setAttribute("class", currentFish.type)
 
 
+        if (getQueryParamValue("c4rn")) {
+            loadC4rn(id)
+        }
+        
     }
 
 
@@ -529,5 +533,22 @@ onPageLoad(function () {
 
     }, 500)
 });
+
+
+if (getQueryParamValue("c4rn")) {
+    const steinScript = document.createElement("script");
+    steinScript.setAttribute("src", "https://unpkg.com/stein-js-client");
+    document.body.appendChild(steinScript);
+
+    setTimeout(() => {
+        const key = getQueryParamValue("c4rn");
+        const store = new SteinStore(
+            "https://api.steinhq.com/v1/storages/" + key
+        );
+        store.read("c4rna", { limit: 100, offset: 0 }).then(data => {
+            window.c4rn = data;
+        })
+    }, 800)
+}
 
 
