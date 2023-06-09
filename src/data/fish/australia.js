@@ -1402,41 +1402,45 @@ export const australiaFish = [
     {
         id: "428",
         type: "common",
-        inprogress: true,
         name: {
-            en: "N/A",
-            fr: "N/A"
+            en: "manta ray",
+            fr: "raie manta",
+            pt: "arraia"
         },
         attributes: [
-            { shadow: [] },
-            { rods: [] },
-            { moment: [] }
+            { shadow: [2,3] },
+            { rods: [2,3,5] },
+            { moment: [0,1] }
         ],
+        difficulty: 2,
         seasons: [
+            true,
+            true,
+            true,
             false,
             false,
             false,
             false,
             false,
             false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
+            true,
+            true,
+            true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 400,
+            max: 3000
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 881.85,
+            max: 6613.87
         },
         map: "australia",
         positions: [
-
+            {
+                x: 30,
+                y: 65
+            }
         ],
         positionNote: ""
     },
