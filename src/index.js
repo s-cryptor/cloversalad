@@ -14,7 +14,11 @@ import { loadC4rn } from './c4rn.js';
 
 
 function trackDataIdClicks(dataIdValue) {
-    ga('send', 'event', 'Clic', 'DataId', dataIdValue);
+    gtag('event', 'clic', {
+        'event_category': 'bouton',
+        'event_action': 'clic',
+        'event_label': dataIdValue
+      });
 }
 
 
