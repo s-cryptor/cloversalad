@@ -201,10 +201,11 @@ export const australiaFish = [
             pt: "tubarão tapete"
         },
         attributes: [
-            { shadow: [2] },
+            { shadow: [2,3,4] },
             { rods: [0,1,2,3,4,5] },
             { moment: [1] }
         ],
+        difficulty: 0,
         seasons: [
             true,
             true,
