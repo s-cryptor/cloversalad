@@ -1283,9 +1283,13 @@ export const alaskaFish = [
             {
                 x: 50,
                 y: 75
+            },
+            {
+                x: 55,
+                y: 15
             }
         ],
-        positionNote: ""
+        positionNote: "position has been changed recently.<br>Try the eastern spot first.<br>Please send a message if you have found a solid spot."
     },
     {
         id: "324",
