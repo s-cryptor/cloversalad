@@ -45,6 +45,7 @@ body{
     position:fixed;
     top:0;
     left:0;
+    max-width:100vw;
     width:100%;
     height:100vh;
     overflow:hidden;
@@ -807,7 +808,7 @@ body.c{
 .cscrollable{
     overflow-y: scroll;
     height: 100vh;
-    padding-bottom: 200px!important;
+    padding-bottom:1px;
 }
 .map-box{
     width:50%;
@@ -1313,7 +1314,9 @@ input[type="number"] {
         }
     }
     #ctrbtmess{
-        display:none;
+        font-size: 12px;
+        width: 110px;
+        text-align: right;
     }
 }
 
