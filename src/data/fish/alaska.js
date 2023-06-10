@@ -97,7 +97,7 @@ export const alaskaFish = [
             },
             {
                 x: 85,
-                y: 85
+                y: 45
             }
         ],
         positionNote: ""
