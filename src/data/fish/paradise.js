@@ -462,7 +462,7 @@ export const paradiseFish = [
                 y: 10
             }
         ],
-        positionNote: ""
+        positionNote: "Not so easy to find.<br>The best way to find this one is to start at coral reef, with a cloverleaf activated, and aim for the biggest shadows.<br>Coral Reef is the spot for clown fish (which have no shadows), so when you see a shadow, there's a good chance it's a parrotfish"
     },
     {
         id: "010",
