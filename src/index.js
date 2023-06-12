@@ -473,7 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (e.target.classList.contains("fishp")) {
             const clickedId = e.target.closest(".item").getAttribute("data-id");
-            trackDataIdClicks(clickedId)
+            trackDataIdClicks(currentFish.name.en)
         }
     })
 
