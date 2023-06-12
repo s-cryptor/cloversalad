@@ -1050,7 +1050,7 @@ export const crFish = [
                 y: 25
             }
         ],
-        positionNote: ""
+        positionNote: "One of the hardest to find.<br>The best known spot is to the northwest of a small circular submerged rock.<br>If you have at least 1 point in perception, you will see it.<br>No one is 100% certain about the shadow (either no shadow or medium-large shadow)"
     },
     { 
         id: "222",
