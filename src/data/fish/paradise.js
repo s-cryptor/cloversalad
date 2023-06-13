@@ -296,7 +296,7 @@ export const paradiseFish = [
                 y: 15
             },
             {
-                x: 90,
+                x: 45,
                 y: 85
             }
         ],
