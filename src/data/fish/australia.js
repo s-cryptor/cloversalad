@@ -1347,8 +1347,12 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:15,
-                y:45
+                x:100,
+                y:40
+            },
+            {
+                x:85,
+                y:90
             }
 
         ],
