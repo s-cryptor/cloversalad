@@ -711,15 +711,11 @@ export const crFish = [
         map: "costa-rica",
         positions: [
             {
-                x: 15,
-                y: 15
+                x: 90,
+                y: 85
             },
             {
                 x: 70,
-                y: 55
-            },
-            {
-                x: 25,
                 y: 55
             }
         ],
