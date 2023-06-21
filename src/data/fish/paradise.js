@@ -677,6 +677,6 @@ export const paradiseFish = [
         ],
         shadow: [],
         rods: [2, 3, 5],
-        positionNote: "MONSTER<br>Spot rotation: it changes every day.<br>Try monster baits to find the bubbles, then cast and wait into the bubbles.<br>If you don't have any monster baits, try cast and reel and wait (and be patient)."
+        positionNote: "IMPORTANT :<br>Since one of the last updates, it appears that the rotation, or positions, or both, have been changed by the game's development teams. The information here may be incorrect. It is strongly advised to try to confirm with a monster bait before spending 3 hours on the spot indicated here on cloversalad."
     }
 ]
