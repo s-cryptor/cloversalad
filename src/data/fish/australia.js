@@ -603,7 +603,7 @@ export const australiaFish = [
         attributes: [
             { shadow: [0,1] },
             { rods: [0,1,2,3,4,5] },
-            { moment: [] }
+            { moment: [1] }
         ],
         seasons: [
             true,
@@ -620,12 +620,12 @@ export const australiaFish = [
             true
         ],
         kgs: {
-            min: 0.1,
-            max: 1000
+            min: 1,
+            max: 2.4
         },
         lbs: {
-            min: 0.1,
-            max: 1000
+            min: 2.20,
+            max: 4.41
         },
         map: "australia",
         positions: [
@@ -643,7 +643,7 @@ export const australiaFish = [
             }
 
         ],
-        positionNote: "!!BUG!!<br>No data about this fish. It carasteristics are not available in the in game bestiary."
+        positionNote: ""
     },
     {
         id: "413",
