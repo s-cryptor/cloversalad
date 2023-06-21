@@ -187,6 +187,10 @@ export const australiaFish = [
             {
                 x:5,
                 y:95
+            },
+            {
+                x:40
+                y:95
             }
 
         ],
