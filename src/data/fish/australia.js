@@ -450,7 +450,10 @@ export const australiaFish = [
             {
                 x: 25,
                 y: 55
-            
+            },
+            {
+                x:10,
+                y:40
             }
         ],
         positionNote: " .<br>(Steve required 90kgs of it for the main quest)"
@@ -851,6 +854,10 @@ export const australiaFish = [
             {
                 x:30,
                 y:60
+            },
+            {
+                x:10,
+                y:40
             }
         ],
         positionNote: ""
