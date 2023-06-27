@@ -591,6 +591,10 @@ export const australiaFish = [
             {
                 x:50,
                 y:30
+            },
+            {
+                x:18,
+                y:48
             }
         ],
         positionNote: ""
