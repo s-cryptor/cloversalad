@@ -97,6 +97,10 @@ export const australiaFish = [
             {
                 x:95,
                 y:30
+            },
+            {
+                x:90,
+                y:87
             }
         ],
         positionNote: ""
@@ -111,7 +115,7 @@ export const australiaFish = [
         },
         difficulty: 0,
         attributes: [
-            { shadow: [1] },
+            { shadow: [2,3] },
             { rods: [0,1,2,3,4,5] },
             { moment: [0] }
         ],
@@ -142,6 +146,10 @@ export const australiaFish = [
             {
                 x:85,
                 y:47
+            },
+            {
+                x:66,
+                y:25
             }
         ],
         positionNote: " "
@@ -450,7 +458,10 @@ export const australiaFish = [
             {
                 x: 25,
                 y: 55
-            
+            },
+            {
+                x:10,
+                y:40
             }
         ],
         positionNote: "<br>(Steve required 90kgs of it for the main quest)"
@@ -593,8 +604,8 @@ export const australiaFish = [
                 y:30
             },
             {
-                x:18,
-                y:48
+                x:24,
+                y:53
             }
         ],
         positionNote: ""
@@ -851,6 +862,10 @@ export const australiaFish = [
             {
                 x:30,
                 y:60
+            },
+            {
+                x:10,
+                y:40
             }
         ],
         positionNote: ""
