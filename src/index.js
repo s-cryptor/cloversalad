@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
 
-        if (currentFish.type == "monster") {
+        if (currentFish.type == "monster" && false) {
 
             function setTodaySpot(date, collection, referenceDate) {
 

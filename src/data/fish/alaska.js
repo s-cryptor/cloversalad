@@ -1448,6 +1448,6 @@ export const alaskaFish = [
                 y: 85
             }
         ],
-        positionNote: "IMPORTANT :<br>Since one of the last updates, it appears that the rotation, or positions, or both, have been changed by the game's development teams. The information here may be incorrect. It is strongly advised to try to confirm with a monster bait before spending 3 hours on the spot indicated here on cloversalad."
+        positionNote: "<img src='./images/marcino.png' class=''><a href='https://discord.com/channels/1038075942460993606/1041643075648368670/1123909057745539142' target='_blank'>(direct link)</a>"
     },
 ]

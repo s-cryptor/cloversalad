@@ -974,6 +974,18 @@ div.box{
     border-radius: 22px;
 }
 
+.marcino-quote{
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+a{
+    color: var(--yellow)!important;
+    &:hover{
+        color: var(--yellow)!important;
+        text-decoration:underline; 
+    }
+}
 
 [data-noshadow="true"]{ 
     position:relative;

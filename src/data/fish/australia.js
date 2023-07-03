@@ -453,7 +453,7 @@ export const australiaFish = [
             
             }
         ],
-        positionNote: " .<br>(Steve required 90kgs of it for the main quest)"
+        positionNote: "<br>(Steve required 90kgs of it for the main quest)"
     },
     {
         id: "49",
@@ -1498,6 +1498,6 @@ export const australiaFish = [
                 y:65
             }
         ],
-        positionNote: "Not sure if it has a shadow or not. Please confirm if you want to <3"
+        positionNote: ""
     }
 ]
