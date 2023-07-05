@@ -38,12 +38,12 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
-                x:85,
-                y:47
+                x:80,
+                y:50
             },
             {
                 x:70,
@@ -91,16 +91,16 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:15,
-                y:45
+                x:18,
+                y:40
             },
             {
-                x:95,
-                y:30
+                x:87,
+                y:38
             },
             {
-                x:90,
-                y:87
+                x:85,
+                y:85
             }
         ],
         positionNote: ""
@@ -144,8 +144,8 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:85,
-                y:47
+                x:80,
+                y:50
             },
             {
                 x:66,
@@ -193,12 +193,12 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
                 x:40,
-                y:95
+                y:90
             }
 
         ],
@@ -244,15 +244,15 @@ export const australiaFish = [
         positions: [
             {
                 x: 30,
-                y: 60
+                y: 55
             },
             {
                 x:55,
-                y:80
+                y:75
             },
             {
-                x:82,
-                y:90
+                x:85,
+                y:85
             }
         ],
         positionNote: ""
@@ -296,12 +296,12 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:75,
-                y:20
+                x:70,
+                y:18
             },
             {
-                x: 10,
-                y: 40
+                x: 14,
+                y: 38
             }
         ],
         positionNote: ""
@@ -346,7 +346,7 @@ export const australiaFish = [
         positions: [
             {
                 x:15,
-                y:45
+                y:40
             },
             {
                 x:50,
@@ -354,7 +354,7 @@ export const australiaFish = [
             },
             {
                 x:60,
-                y:95
+                y:87
             }
         ],
         positionNote: ""
@@ -398,12 +398,12 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:42,
-                y:94
+                x:44,
+                y:90
             },
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
                 x:60,
@@ -456,11 +456,11 @@ export const australiaFish = [
                 y:30
             },
             {
-                x: 25,
+                x: 30,
                 y: 55
             },
             {
-                x:10,
+                x:15,
                 y:40
             }
         ],
@@ -551,8 +551,8 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:35,
-                y:40
+                x:38,
+                y:38
             },
             {
                 x:50,
@@ -604,7 +604,7 @@ export const australiaFish = [
                 y:30
             },
             {
-                x:24,
+                x:30,
                 y:53
             }
         ],
@@ -649,16 +649,16 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
                 x:30,
-                y:65
+                y:55
             },
             {
-                x:10,
-                y:45
+                x:13,
+                y:40
             }
 
         ],
@@ -704,7 +704,7 @@ export const australiaFish = [
         positions: [
             {
                 x:30,
-                y:65
+                y:57
             },
             {
                 x:55,
@@ -753,15 +753,15 @@ export const australiaFish = [
         positions: [
             {
                 x:15,
-                y:45
+                y:40
             },
             {
                 x:42,
-                y:94
+                y:90
             },
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
                 x:70,
@@ -810,11 +810,11 @@ export const australiaFish = [
         positions: [
             {
                 x:15,
-                y:45
+                y:40
             },
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             }
 
         ],
@@ -861,11 +861,11 @@ export const australiaFish = [
         positions: [
             {
                 x:30,
-                y:60
+                y:55
             },
             {
-                x:10,
-                y:40
+                x:15,
+                y:35
             }
         ],
         positionNote: ""
@@ -910,7 +910,7 @@ export const australiaFish = [
         positions: [
             {
                 x:30,
-                y:65
+                y:55
             }
         ],
         positionNote: ""
@@ -955,23 +955,19 @@ export const australiaFish = [
         positions: [
             {
                 x:30,
-                y:65
+                y:55
             },
             {
                 x:42,
-                y:94
+                y:90
             },
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
-                x:85,
-                y:47
-            },
-            {
-                x:5,
-                y:95
+                x:80,
+                y:55
             }
             
         ],
@@ -1016,8 +1012,8 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:95,
-                y:30
+                x:90,
+                y:35
             }
         ],
         positionNote: ""
@@ -1061,12 +1057,12 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
                 x: 30,
-                y: 60
+                y: 55
             },
             {
                 x: 50,
@@ -1116,15 +1112,15 @@ export const australiaFish = [
         positions: [
             {
                 x:15,
-                y:45
+                y:40
             },
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             },
             {
-                x:85,
-                y:47
+                x:80,
+                y:50
             },
             {
                 x:70,
@@ -1132,7 +1128,7 @@ export const australiaFish = [
             },
             {
                 x: 30,
-                y: 60
+                y: 55
             }
         ],
         positionNote: ""
@@ -1177,15 +1173,15 @@ export const australiaFish = [
         positions: [
             {
                 x:30,
-                y:60
+                y:55
             },
             {
-                x:80,
-                y:90
+                x:85,
+                y:85
             },
             {
                 x:50,
-                y:70
+                y:67
             }
         ],
         positionNote: ""
@@ -1230,11 +1226,11 @@ export const australiaFish = [
         positions: [
             {
                 x:42,
-                y:94
+                y:90
             },
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             }
         ],
         positionNote: ""
@@ -1279,11 +1275,11 @@ export const australiaFish = [
         positions: [
             {
                 x:42,
-                y:94
+                y:90
             },
             {
-                x:5,
-                y:95
+                x:10,
+                y:90
             }
         ],
         positionNote: ""
@@ -1326,8 +1322,8 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:85,
-                y:45
+                x:80,
+                y:50
             }
         ],
         positionNote: ""
@@ -1370,12 +1366,12 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:100,
+                x:90,
                 y:40
             },
             {
                 x:85,
-                y:90
+                y:85
             }
 
         ],
@@ -1421,7 +1417,7 @@ export const australiaFish = [
         positions: [
             {
                 x: 40,
-                y: 95
+                y: 90
             }
         ],
         positionNote: ""
@@ -1466,7 +1462,7 @@ export const australiaFish = [
         positions: [
             {
                 x: 30,
-                y: 65
+                y: 55
             }
         ],
         positionNote: ""
@@ -1509,7 +1505,7 @@ export const australiaFish = [
         map: "australia",
         positions: [
             {
-                x:95,
+                x:90,
                 y:65
             }
         ],
